@@ -1,8 +1,8 @@
-/*! @mainpage Blinking switch
+/*! @mainpage guia1_ej2
  *
  * \section genDesc General Description
  *
- * This example makes LED_1 and LED_2 blink if SWITCH_1 or SWITCH_2 are pressed.
+ * AL presionar el SWITCH_1 se enciende el LED_1, lo mismos para el 2. AL presionar ambos se enciende el LED_3
  *
  * @section changelog Changelog
  *
