@@ -1,0 +1,120 @@
+.TH "C:/Users/Weppler/Documents/0_FACULTAD/5_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler_1C_2026/firmware/projects/guia1_ej6/main/guia1_ej6.c" 3 "Guia 1 Ejercicio 6" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Weppler/Documents/0_FACULTAD/5_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler_1C_2026/firmware/projects/guia1_ej6/main/guia1_ej6.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <stdint\&.h>\fP
+.br
+\fR#include 'gpio_mcu\&.h'\fP
+.br
+
+.SS "Estructuras de datos"
+
+.in +1c
+.ti -1c
+.RI "struct \fBgpioConf_t\fP"
+.br
+.in -1c
+.SS "Funciones"
+
+.in +1c
+.ti -1c
+.RI "int8_t \fBConvertir_Num_a_BCD\fP (uint32_t data, uint8_t digits, uint8_t *bcd_number)"
+.br
+.ti -1c
+.RI "void \fBsetBcdToGpio\fP (uint8_t bcd, \fBgpioConf_t\fP *gpioArray)"
+.br
+.ti -1c
+.RI "void \fBdisplayNumber\fP (uint32_t data, uint8_t digits, \fBgpioConf_t\fP *\fBbcdGpio\fP, \fBgpioConf_t\fP *\fBselGpio\fP)"
+.br
+.ti -1c
+.RI "void \fBmostrar_numero\fP (uint32_t data, uint8_t digits, \fBgpioConf_t\fP *\fBbcdGpio\fP, \fBgpioConf_t\fP *\fBselGpio\fP)"
+.br
+.RI "Muestra un número en un display multiplexado usando BCD\&. "
+.ti -1c
+.RI "void \fBapp_main\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBgpioConf_t\fP \fBbcdGpio\fP [4]"
+.br
+.ti -1c
+.RI "\fBgpioConf_t\fP \fBselGpio\fP [3]"
+.br
+.in -1c
+.SH "Documentación de funciones"
+.PP 
+.SS "void app_main (void )"
+
+.PP
+Definición en la línea \fB124\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SS "int8_t Convertir_Num_a_BCD (uint32_t data, uint8_t digits, uint8_t * bcd_number)"
+
+.PP
+Definición en la línea \fB48\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SS "void displayNumber (uint32_t data, uint8_t digits, \fBgpioConf_t\fP * bcdGpio, \fBgpioConf_t\fP * selGpio)"
+
+.SS "void mostrar_numero (uint32_t data, uint8_t digits, \fBgpioConf_t\fP * bcdGpio, \fBgpioConf_t\fP * selGpio)"
+
+.PP
+Muestra un número en un display multiplexado usando BCD\&. Esta función recibe un número de 32 bits, lo convierte a un arreglo de dígitos decimales (BCD) utilizando la función convertToBcdArray, y luego muestra cada dígito en un display LCD multiplexado utilizando los GPIOs configurados\&.
+
+.PP
+\fBParámetros\fP
+.RS 4
+\fIdata\fP Número de 32 bits a mostrar 
+.br
+\fIdigits\fP Cantidad de dígitos a visualizar 
+.br
+\fI\fBbcdGpio\fP\fP Vector de GPIOs para los bits BCD (D1-D4) 
+.br
+\fI\fBselGpio\fP\fP Vector de GPIOs para selección de dígitos del display 
+.RE
+.PP
+
+.PP
+Definición en la línea \fB85\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SS "void setBcdToGpio (uint8_t bcd, \fBgpioConf_t\fP * gpioArray)"
+
+.PP
+Definición en la línea \fB58\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SH "Documentación de variables"
+.PP 
+.SS "\fBgpioConf_t\fP bcdGpio[4]"
+\fBValor inicial:\fP
+.nf
+                   = {
+    {GPIO_20, 1},
+    {GPIO_21, 1},
+    {GPIO_22, 1},
+    {GPIO_23, 1}
+}
+.PP
+.fi
+
+.PP
+Definición en la línea \fB113\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SS "\fBgpioConf_t\fP selGpio[3]"
+\fBValor inicial:\fP
+.nf
+                   = {
+    {GPIO_19, 1}, 
+    {GPIO_18, 1}, 
+    {GPIO_9, 1}   
+}
+.PP
+.fi
+
+.PP
+Definición en la línea \fB119\fP del archivo \fBguia1_ej6\&.c\fP\&.
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Guia 1 Ejercicio 6 del código fuente\&.

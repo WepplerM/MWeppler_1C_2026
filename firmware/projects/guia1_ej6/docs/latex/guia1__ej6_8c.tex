@@ -1,0 +1,142 @@
+\doxysection{Referencia del archivo C:\+/\+\+Users/\+\+Weppler/\+\+Documents/\+0\+\_\+\+FACULTAD/\+5\+\_\+\+QUINTO/\+\+PRIMER CUATRIMESTRE/\+\+PROGRAMABLE/\+\+MWeppler\+\_\+1\+C\+\_\+2026/\+firmware/\+projects/\+guia1\+\_\+ej6/\+main/\+guia1\+\_\+ej6.c}
+\hypertarget{guia1__ej6_8c}{}\label{guia1__ej6_8c}\index{C:/Users/Weppler/Documents/0\_FACULTAD/5\_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler\_1C\_2026/firmware/projects/guia1\_ej6/main/guia1\_ej6.c@{C:/Users/Weppler/Documents/0\_FACULTAD/5\_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler\_1C\_2026/firmware/projects/guia1\_ej6/main/guia1\_ej6.c}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdint.\+h$>$}\newline
+{\ttfamily \+\#include "{}gpio\+\_\+mcu.\+h"{}}\newline
+\doxysubsubsection*{Estructuras de datos}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \doxymbox{\hyperlink{guia1__ej6_8c_a8057dd4b5677ed17b4b05c7ebbaad88d}{Convertir\+\_\+\+Num\+\_\+a\+\_\+\+BCD}} (uint32\+\_\+t data, uint8\+\_\+t digits, uint8\+\_\+t \texorpdfstring{$\ast$}{*}bcd\+\_\+number)
+\item 
+void \doxymbox{\hyperlink{guia1__ej6_8c_a4238cb2257b6fd7f9cfbef8742c79726}{set\+Bcd\+To\+Gpio}} (uint8\+\_\+t bcd, \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}gpio\+Array)
+\item 
+void \doxymbox{\hyperlink{guia1__ej6_8c_a347974f1d447450e0269fc14e8abb68a}{display\+Number}} (uint32\+\_\+t data, uint8\+\_\+t digits, \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159}{bcd\+Gpio}}, \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d}{sel\+Gpio}})
+\item 
+void \doxymbox{\hyperlink{guia1__ej6_8c_a6ca5750df3cbb4fc627196ee280c586b}{mostrar\+\_\+numero}} (uint32\+\_\+t data, uint8\+\_\+t digits, \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159}{bcd\+Gpio}}, \doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d}{sel\+Gpio}})
+\begin{DoxyCompactList}\small\item\em Muestra un número en un display multiplexado usando BCD. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{guia1__ej6_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}{app\+\_\+main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \doxymbox{\hyperlink{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159}{bcd\+Gpio}} \+[4]\+
+\item 
+\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \doxymbox{\hyperlink{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d}{sel\+Gpio}} \+[3]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{guia1__ej6_8c_doc-func-members}
+\doxysubsection{Documentación de funciones}
+\Hypertarget{guia1__ej6_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}\index{guia1\_ej6.c@{guia1\_ej6.c}!app\_main@{app\_main}}
+\index{app\_main@{app\_main}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{app\_main()}{app\_main()}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_a630544a7f0a2cc40d8a7fefab7e2fe70} 
+void app\+\_\+main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00124}{124}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+
+\Hypertarget{guia1__ej6_8c_a8057dd4b5677ed17b4b05c7ebbaad88d}\index{guia1\_ej6.c@{guia1\_ej6.c}!Convertir\_Num\_a\_BCD@{Convertir\_Num\_a\_BCD}}
+\index{Convertir\_Num\_a\_BCD@{Convertir\_Num\_a\_BCD}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{Convertir\_Num\_a\_BCD()}{Convertir\_Num\_a\_BCD()}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_a8057dd4b5677ed17b4b05c7ebbaad88d} 
+int8\+\_\+t Convertir\+\_\+\+Num\+\_\+a\+\_\+\+BCD (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data}{, }\item[{uint8\+\_\+t}]{digits}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bcd\+\_\+number}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00048}{48}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+
+\Hypertarget{guia1__ej6_8c_a347974f1d447450e0269fc14e8abb68a}\index{guia1\_ej6.c@{guia1\_ej6.c}!displayNumber@{displayNumber}}
+\index{displayNumber@{displayNumber}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{displayNumber()}{displayNumber()}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_a347974f1d447450e0269fc14e8abb68a} 
+void display\+Number (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data}{, }\item[{uint8\+\_\+t}]{digits}{, }\item[{\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{bcd\+Gpio}{, }\item[{\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sel\+Gpio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{guia1__ej6_8c_a6ca5750df3cbb4fc627196ee280c586b}\index{guia1\_ej6.c@{guia1\_ej6.c}!mostrar\_numero@{mostrar\_numero}}
+\index{mostrar\_numero@{mostrar\_numero}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{mostrar\_numero()}{mostrar\_numero()}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_a6ca5750df3cbb4fc627196ee280c586b} 
+void mostrar\+\_\+numero (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data}{, }\item[{uint8\+\_\+t}]{digits}{, }\item[{\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{bcd\+Gpio}{, }\item[{\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{sel\+Gpio}{}\end{DoxyParamCaption})}
+
+
+
+Muestra un número en un display multiplexado usando BCD. 
+
+Esta función recibe un número de 32 bits, lo convierte a un arreglo de dígitos decimales (BCD) utilizando la función convert\+To\+Bcd\+Array, y luego muestra cada dígito en un display LCD multiplexado utilizando los GPIOs configurados.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & Número de 32 bits a mostrar \\
+\hline
+{\em digits} & Cantidad de dígitos a visualizar \\
+\hline
+{\em \doxylink{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159}{bcd\+Gpio}} & Vector de GPIOs para los bits BCD (D1-\/\+D4) \\
+\hline
+{\em \doxylink{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d}{sel\+Gpio}} & Vector de GPIOs para selección de dígitos del display \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00085}{85}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+
+\Hypertarget{guia1__ej6_8c_a4238cb2257b6fd7f9cfbef8742c79726}\index{guia1\_ej6.c@{guia1\_ej6.c}!setBcdToGpio@{setBcdToGpio}}
+\index{setBcdToGpio@{setBcdToGpio}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{setBcdToGpio()}{setBcdToGpio()}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_a4238cb2257b6fd7f9cfbef8742c79726} 
+void set\+Bcd\+To\+Gpio (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcd}{, }\item[{\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{gpio\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00058}{58}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+
+
+
+\label{doc-var-members}
+\Hypertarget{guia1__ej6_8c_doc-var-members}
+\doxysubsection{Documentación de variables}
+\Hypertarget{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159}\index{guia1\_ej6.c@{guia1\_ej6.c}!bcdGpio@{bcdGpio}}
+\index{bcdGpio@{bcdGpio}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{bcdGpio}{bcdGpio}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_aefe544e067a7b0602994f196fea34159} 
+\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} bcd\+Gpio\+[4]\+}
+
+{\bfseries Valor inicial:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \{}
+\DoxyCodeLine{\ \ \ \ \{GPIO\_20,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{GPIO\_21,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{GPIO\_22,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{GPIO\_23,\ 1\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00113}{113}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+
+\Hypertarget{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d}\index{guia1\_ej6.c@{guia1\_ej6.c}!selGpio@{selGpio}}
+\index{selGpio@{selGpio}!guia1\_ej6.c@{guia1\_ej6.c}}
+\doxysubsubsection{\texorpdfstring{selGpio}{selGpio}}
+{\footnotesize\ttfamily \label{guia1__ej6_8c_aac30d5904789dfdb72bb687c422aa47d} 
+\doxymbox{\hyperlink{structgpio_conf__t}{gpio\+Conf\+\_\+t}} sel\+Gpio\+[3]\+}
+
+{\bfseries Valor inicial:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \{}
+\DoxyCodeLine{\ \ \ \ \{GPIO\_19,\ 1\},\ }
+\DoxyCodeLine{\ \ \ \ \{GPIO\_18,\ 1\},\ }
+\DoxyCodeLine{\ \ \ \ \{GPIO\_9,\ 1\}\ \ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea \doxymbox{\hyperlink{guia1__ej6_8c_source_l00119}{119}} del archivo \doxymbox{\hyperlink{guia1__ej6_8c_source}{guia1\+\_\+ej6.\+c}}.
+

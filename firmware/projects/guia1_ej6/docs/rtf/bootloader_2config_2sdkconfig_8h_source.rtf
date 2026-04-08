@@ -1,0 +1,862 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+sdkconfig.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Weppler/Documents/0_FACULTAD/5_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler_1C_2026/firmware/projects/guia1_ej6/build/bootloader/config/sdkconfig.h}
+{\xe \v C:/Users/Weppler/Documents/0_FACULTAD/5_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler_1C_2026/firmware/projects/guia1_ej6/build/bootloader/config/sdkconfig.h}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Ir a la documentación de este archivo.\par
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /*}\par
+00002 {\cf20  * Automatically generated file. DO NOT EDIT.}\par
+00003 {\cf20  * Espressif IoT Development Framework (ESP-IDF) 5.5.3 Configuration Header}\par
+00004 {\cf20  */}\par
+00005 {\cf21 #pragma once}\par
+00006 {\cf21 #define CONFIG_SOC_ADC_SUPPORTED 1}\par
+00007 {\cf21 #define CONFIG_SOC_DEDICATED_GPIO_SUPPORTED 1}\par
+00008 {\cf21 #define CONFIG_SOC_UART_SUPPORTED 1}\par
+00009 {\cf21 #define CONFIG_SOC_UHCI_SUPPORTED 1}\par
+00010 {\cf21 #define CONFIG_SOC_GDMA_SUPPORTED 1}\par
+00011 {\cf21 #define CONFIG_SOC_AHB_GDMA_SUPPORTED 1}\par
+00012 {\cf21 #define CONFIG_SOC_GPTIMER_SUPPORTED 1}\par
+00013 {\cf21 #define CONFIG_SOC_PCNT_SUPPORTED 1}\par
+00014 {\cf21 #define CONFIG_SOC_MCPWM_SUPPORTED 1}\par
+00015 {\cf21 #define CONFIG_SOC_TWAI_SUPPORTED 1}\par
+00016 {\cf21 #define CONFIG_SOC_ETM_SUPPORTED 1}\par
+00017 {\cf21 #define CONFIG_SOC_PARLIO_SUPPORTED 1}\par
+00018 {\cf21 #define CONFIG_SOC_BT_SUPPORTED 1}\par
+00019 {\cf21 #define CONFIG_SOC_IEEE802154_SUPPORTED 1}\par
+00020 {\cf21 #define CONFIG_SOC_ASYNC_MEMCPY_SUPPORTED 1}\par
+00021 {\cf21 #define CONFIG_SOC_USB_SERIAL_JTAG_SUPPORTED 1}\par
+00022 {\cf21 #define CONFIG_SOC_TEMP_SENSOR_SUPPORTED 1}\par
+00023 {\cf21 #define CONFIG_SOC_PHY_SUPPORTED 1}\par
+00024 {\cf21 #define CONFIG_SOC_WIFI_SUPPORTED 1}\par
+00025 {\cf21 #define CONFIG_SOC_SUPPORTS_SECURE_DL_MODE 1}\par
+00026 {\cf21 #define CONFIG_SOC_ULP_SUPPORTED 1}\par
+00027 {\cf21 #define CONFIG_SOC_LP_CORE_SUPPORTED 1}\par
+00028 {\cf21 #define CONFIG_SOC_EFUSE_KEY_PURPOSE_FIELD 1}\par
+00029 {\cf21 #define CONFIG_SOC_EFUSE_SUPPORTED 1}\par
+00030 {\cf21 #define CONFIG_SOC_RTC_FAST_MEM_SUPPORTED 1}\par
+00031 {\cf21 #define CONFIG_SOC_RTC_MEM_SUPPORTED 1}\par
+00032 {\cf21 #define CONFIG_SOC_I2S_SUPPORTED 1}\par
+00033 {\cf21 #define CONFIG_SOC_RMT_SUPPORTED 1}\par
+00034 {\cf21 #define CONFIG_SOC_SDM_SUPPORTED 1}\par
+00035 {\cf21 #define CONFIG_SOC_GPSPI_SUPPORTED 1}\par
+00036 {\cf21 #define CONFIG_SOC_LEDC_SUPPORTED 1}\par
+00037 {\cf21 #define CONFIG_SOC_I2C_SUPPORTED 1}\par
+00038 {\cf21 #define CONFIG_SOC_SYSTIMER_SUPPORTED 1}\par
+00039 {\cf21 #define CONFIG_SOC_SUPPORT_COEXISTENCE 1}\par
+00040 {\cf21 #define CONFIG_SOC_AES_SUPPORTED 1}\par
+00041 {\cf21 #define CONFIG_SOC_MPI_SUPPORTED 1}\par
+00042 {\cf21 #define CONFIG_SOC_SHA_SUPPORTED 1}\par
+00043 {\cf21 #define CONFIG_SOC_HMAC_SUPPORTED 1}\par
+00044 {\cf21 #define CONFIG_SOC_DIG_SIGN_SUPPORTED 1}\par
+00045 {\cf21 #define CONFIG_SOC_ECC_SUPPORTED 1}\par
+00046 {\cf21 #define CONFIG_SOC_FLASH_ENC_SUPPORTED 1}\par
+00047 {\cf21 #define CONFIG_SOC_SECURE_BOOT_SUPPORTED 1}\par
+00048 {\cf21 #define CONFIG_SOC_SDIO_SLAVE_SUPPORTED 1}\par
+00049 {\cf21 #define CONFIG_SOC_BOD_SUPPORTED 1}\par
+00050 {\cf21 #define CONFIG_SOC_APM_SUPPORTED 1}\par
+00051 {\cf21 #define CONFIG_SOC_PMU_SUPPORTED 1}\par
+00052 {\cf21 #define CONFIG_SOC_PMU_PVT_SUPPORTED 1}\par
+00053 {\cf21 #define CONFIG_SOC_PAU_SUPPORTED 1}\par
+00054 {\cf21 #define CONFIG_SOC_LP_TIMER_SUPPORTED 1}\par
+00055 {\cf21 #define CONFIG_SOC_LP_AON_SUPPORTED 1}\par
+00056 {\cf21 #define CONFIG_SOC_LP_PERIPHERALS_SUPPORTED 1}\par
+00057 {\cf21 #define CONFIG_SOC_LP_I2C_SUPPORTED 1}\par
+00058 {\cf21 #define CONFIG_SOC_ULP_LP_UART_SUPPORTED 1}\par
+00059 {\cf21 #define CONFIG_SOC_CLK_TREE_SUPPORTED 1}\par
+00060 {\cf21 #define CONFIG_SOC_ASSIST_DEBUG_SUPPORTED 1}\par
+00061 {\cf21 #define CONFIG_SOC_WDT_SUPPORTED 1}\par
+00062 {\cf21 #define CONFIG_SOC_SPI_FLASH_SUPPORTED 1}\par
+00063 {\cf21 #define CONFIG_SOC_RNG_SUPPORTED 1}\par
+00064 {\cf21 #define CONFIG_SOC_LIGHT_SLEEP_SUPPORTED 1}\par
+00065 {\cf21 #define CONFIG_SOC_DEEP_SLEEP_SUPPORTED 1}\par
+00066 {\cf21 #define CONFIG_SOC_MODEM_CLOCK_SUPPORTED 1}\par
+00067 {\cf21 #define CONFIG_SOC_PM_SUPPORTED 1}\par
+00068 {\cf21 #define CONFIG_SOC_XTAL_SUPPORT_40M 1}\par
+00069 {\cf21 #define CONFIG_SOC_XTAL_CLOCK_PATH_DEPENDS_ON_TOP_DOMAIN 1}\par
+00070 {\cf21 #define CONFIG_SOC_AES_SUPPORT_DMA 1}\par
+00071 {\cf21 #define CONFIG_SOC_AES_GDMA 1}\par
+00072 {\cf21 #define CONFIG_SOC_AES_SUPPORT_AES_128 1}\par
+00073 {\cf21 #define CONFIG_SOC_AES_SUPPORT_AES_256 1}\par
+00074 {\cf21 #define CONFIG_SOC_ADC_DIG_CTRL_SUPPORTED 1}\par
+00075 {\cf21 #define CONFIG_SOC_ADC_DIG_IIR_FILTER_SUPPORTED 1}\par
+00076 {\cf21 #define CONFIG_SOC_ADC_MONITOR_SUPPORTED 1}\par
+00077 {\cf21 #define CONFIG_SOC_ADC_DMA_SUPPORTED 1}\par
+00078 {\cf21 #define CONFIG_SOC_ADC_PERIPH_NUM 1}\par
+00079 {\cf21 #define CONFIG_SOC_ADC_MAX_CHANNEL_NUM 7}\par
+00080 {\cf21 #define CONFIG_SOC_ADC_ATTEN_NUM 4}\par
+00081 {\cf21 #define CONFIG_SOC_ADC_DIGI_CONTROLLER_NUM 1}\par
+00082 {\cf21 #define CONFIG_SOC_ADC_PATT_LEN_MAX 8}\par
+00083 {\cf21 #define CONFIG_SOC_ADC_DIGI_MAX_BITWIDTH 12}\par
+00084 {\cf21 #define CONFIG_SOC_ADC_DIGI_MIN_BITWIDTH 12}\par
+00085 {\cf21 #define CONFIG_SOC_ADC_DIGI_IIR_FILTER_NUM 2}\par
+00086 {\cf21 #define CONFIG_SOC_ADC_DIGI_MONITOR_NUM 2}\par
+00087 {\cf21 #define CONFIG_SOC_ADC_DIGI_RESULT_BYTES 4}\par
+00088 {\cf21 #define CONFIG_SOC_ADC_DIGI_DATA_BYTES_PER_CONV 4}\par
+00089 {\cf21 #define CONFIG_SOC_ADC_SAMPLE_FREQ_THRES_HIGH 83333}\par
+00090 {\cf21 #define CONFIG_SOC_ADC_SAMPLE_FREQ_THRES_LOW 611}\par
+00091 {\cf21 #define CONFIG_SOC_ADC_RTC_MIN_BITWIDTH 12}\par
+00092 {\cf21 #define CONFIG_SOC_ADC_RTC_MAX_BITWIDTH 12}\par
+00093 {\cf21 #define CONFIG_SOC_ADC_CALIBRATION_V1_SUPPORTED 1}\par
+00094 {\cf21 #define CONFIG_SOC_ADC_SELF_HW_CALI_SUPPORTED 1}\par
+00095 {\cf21 #define CONFIG_SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED 1}\par
+00096 {\cf21 #define CONFIG_SOC_ADC_TEMPERATURE_SHARE_INTR 1}\par
+00097 {\cf21 #define CONFIG_SOC_ADC_SHARED_POWER 1}\par
+00098 {\cf21 #define CONFIG_SOC_BROWNOUT_RESET_SUPPORTED 1}\par
+00099 {\cf21 #define CONFIG_SOC_SHARED_IDCACHE_SUPPORTED 1}\par
+00100 {\cf21 #define CONFIG_SOC_CACHE_FREEZE_SUPPORTED 1}\par
+00101 {\cf21 #define CONFIG_SOC_CPU_CORES_NUM 1}\par
+00102 {\cf21 #define CONFIG_SOC_CPU_INTR_NUM 32}\par
+00103 {\cf21 #define CONFIG_SOC_CPU_HAS_FLEXIBLE_INTC 1}\par
+00104 {\cf21 #define CONFIG_SOC_INT_PLIC_SUPPORTED 1}\par
+00105 {\cf21 #define CONFIG_SOC_CPU_HAS_CSR_PC 1}\par
+00106 {\cf21 #define CONFIG_SOC_CPU_BREAKPOINTS_NUM 4}\par
+00107 {\cf21 #define CONFIG_SOC_CPU_WATCHPOINTS_NUM 4}\par
+00108 {\cf21 #define CONFIG_SOC_CPU_WATCHPOINT_MAX_REGION_SIZE 0x80000000}\par
+00109 {\cf21 #define CONFIG_SOC_CPU_HAS_PMA 1}\par
+00110 {\cf21 #define CONFIG_SOC_CPU_IDRAM_SPLIT_USING_PMP 1}\par
+00111 {\cf21 #define CONFIG_SOC_CPU_PMP_REGION_GRANULARITY 4}\par
+00112 {\cf21 #define CONFIG_SOC_DS_SIGNATURE_MAX_BIT_LEN 3072}\par
+00113 {\cf21 #define CONFIG_SOC_DS_KEY_PARAM_MD_IV_LENGTH 16}\par
+00114 {\cf21 #define CONFIG_SOC_DS_KEY_CHECK_MAX_WAIT_US 1100}\par
+00115 {\cf21 #define CONFIG_SOC_AHB_GDMA_VERSION 1}\par
+00116 {\cf21 #define CONFIG_SOC_GDMA_NUM_GROUPS_MAX 1}\par
+00117 {\cf21 #define CONFIG_SOC_GDMA_PAIRS_PER_GROUP_MAX 3}\par
+00118 {\cf21 #define CONFIG_SOC_GDMA_SUPPORT_ETM 1}\par
+00119 {\cf21 #define CONFIG_SOC_GDMA_SUPPORT_SLEEP_RETENTION 1}\par
+00120 {\cf21 #define CONFIG_SOC_ETM_GROUPS 1}\par
+00121 {\cf21 #define CONFIG_SOC_ETM_CHANNELS_PER_GROUP 50}\par
+00122 {\cf21 #define CONFIG_SOC_ETM_SUPPORT_SLEEP_RETENTION 1}\par
+00123 {\cf21 #define CONFIG_SOC_GPIO_PORT 1}\par
+00124 {\cf21 #define CONFIG_SOC_GPIO_PIN_COUNT 31}\par
+00125 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER 1}\par
+00126 {\cf21 #define CONFIG_SOC_GPIO_FLEX_GLITCH_FILTER_NUM 8}\par
+00127 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_ETM 1}\par
+00128 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_RTC_INDEPENDENT 1}\par
+00129 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP 1}\par
+00130 {\cf21 #define CONFIG_SOC_LP_IO_CLOCK_IS_INDEPENDENT 1}\par
+00131 {\cf21 #define CONFIG_SOC_GPIO_IN_RANGE_MAX 30}\par
+00132 {\cf21 #define CONFIG_SOC_GPIO_OUT_RANGE_MAX 30}\par
+00133 {\cf21 #define CONFIG_SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK 0}\par
+00134 {\cf21 #define CONFIG_SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT 8}\par
+00135 {\cf21 #define CONFIG_SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK 0x000000007FFFFF00}\par
+00136 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_FORCE_HOLD 1}\par
+00137 {\cf21 #define CONFIG_SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP 1}\par
+00138 {\cf21 #define CONFIG_SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX 1}\par
+00139 {\cf21 #define CONFIG_SOC_CLOCKOUT_HAS_SOURCE_GATE 1}\par
+00140 {\cf21 #define CONFIG_SOC_GPIO_CLOCKOUT_CHANNEL_NUM 3}\par
+00141 {\cf21 #define CONFIG_SOC_RTCIO_PIN_COUNT 8}\par
+00142 {\cf21 #define CONFIG_SOC_RTCIO_INPUT_OUTPUT_SUPPORTED 1}\par
+00143 {\cf21 #define CONFIG_SOC_RTCIO_HOLD_SUPPORTED 1}\par
+00144 {\cf21 #define CONFIG_SOC_RTCIO_WAKE_SUPPORTED 1}\par
+00145 {\cf21 #define CONFIG_SOC_RTCIO_EDGE_WAKE_SUPPORTED 1}\par
+00146 {\cf21 #define CONFIG_SOC_DEDIC_GPIO_OUT_CHANNELS_NUM 8}\par
+00147 {\cf21 #define CONFIG_SOC_DEDIC_GPIO_IN_CHANNELS_NUM 8}\par
+00148 {\cf21 #define CONFIG_SOC_DEDIC_PERIPH_ALWAYS_ENABLE 1}\par
+00149 {\cf21 #define CONFIG_SOC_I2C_NUM 2}\par
+00150 {\cf21 #define CONFIG_SOC_HP_I2C_NUM 1}\par
+00151 {\cf21 #define CONFIG_SOC_I2C_FIFO_LEN 32}\par
+00152 {\cf21 #define CONFIG_SOC_I2C_CMD_REG_NUM 8}\par
+00153 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_SLAVE 1}\par
+00154 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_HW_FSM_RST 1}\par
+00155 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_HW_CLR_BUS 1}\par
+00156 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_XTAL 1}\par
+00157 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_RTC 1}\par
+00158 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_10BIT_ADDR 1}\par
+00159 {\cf21 #define CONFIG_SOC_I2C_SLAVE_SUPPORT_BROADCAST 1}\par
+00160 {\cf21 #define CONFIG_SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE 1}\par
+00161 {\cf21 #define CONFIG_SOC_I2C_SLAVE_SUPPORT_I2CRAM_ACCESS 1}\par
+00162 {\cf21 #define CONFIG_SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH 1}\par
+00163 {\cf21 #define CONFIG_SOC_I2C_SUPPORT_SLEEP_RETENTION 1}\par
+00164 {\cf21 #define CONFIG_SOC_LP_I2C_NUM 1}\par
+00165 {\cf21 #define CONFIG_SOC_LP_I2C_FIFO_LEN 16}\par
+00166 {\cf21 #define CONFIG_SOC_I2S_NUM 1}\par
+00167 {\cf21 #define CONFIG_SOC_I2S_HW_VERSION_2 1}\par
+00168 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_ETM 1}\par
+00169 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_XTAL 1}\par
+00170 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PLL_F160M 1}\par
+00171 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PCM 1}\par
+00172 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PDM 1}\par
+00173 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PDM_TX 1}\par
+00174 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PCM2PDM 1}\par
+00175 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_PDM_RX 1}\par
+00176 {\cf21 #define CONFIG_SOC_I2S_PDM_MAX_TX_LINES 2}\par
+00177 {\cf21 #define CONFIG_SOC_I2S_PDM_MAX_RX_LINES 1}\par
+00178 {\cf21 #define CONFIG_SOC_I2S_SUPPORTS_TDM 1}\par
+00179 {\cf21 #define CONFIG_SOC_I2S_SUPPORT_SLEEP_RETENTION 1}\par
+00180 {\cf21 #define CONFIG_SOC_LEDC_SUPPORT_PLL_DIV_CLOCK 1}\par
+00181 {\cf21 #define CONFIG_SOC_LEDC_SUPPORT_XTAL_CLOCK 1}\par
+00182 {\cf21 #define CONFIG_SOC_LEDC_TIMER_NUM 4}\par
+00183 {\cf21 #define CONFIG_SOC_LEDC_CHANNEL_NUM 6}\par
+00184 {\cf21 #define CONFIG_SOC_LEDC_TIMER_BIT_WIDTH 20}\par
+00185 {\cf21 #define CONFIG_SOC_LEDC_SUPPORT_FADE_STOP 1}\par
+00186 {\cf21 #define CONFIG_SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED 1}\par
+00187 {\cf21 #define CONFIG_SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX 16}\par
+00188 {\cf21 #define CONFIG_SOC_LEDC_FADE_PARAMS_BIT_WIDTH 10}\par
+00189 {\cf21 #define CONFIG_SOC_LEDC_SUPPORT_SLEEP_RETENTION 1}\par
+00190 {\cf21 #define CONFIG_SOC_MMU_PAGE_SIZE_CONFIGURABLE 1}\par
+00191 {\cf21 #define CONFIG_SOC_MMU_PAGE_SIZE_8KB_SUPPORTED 1}\par
+00192 {\cf21 #define CONFIG_SOC_MMU_PERIPH_NUM 1}\par
+00193 {\cf21 #define CONFIG_SOC_MMU_LINEAR_ADDRESS_REGION_NUM 1}\par
+00194 {\cf21 #define CONFIG_SOC_MMU_DI_VADDR_SHARED 1}\par
+00195 {\cf21 #define CONFIG_SOC_MPU_MIN_REGION_SIZE 0x20000000}\par
+00196 {\cf21 #define CONFIG_SOC_MPU_REGIONS_MAX_NUM 8}\par
+00197 {\cf21 #define CONFIG_SOC_PCNT_GROUPS 1}\par
+00198 {\cf21 #define CONFIG_SOC_PCNT_UNITS_PER_GROUP 4}\par
+00199 {\cf21 #define CONFIG_SOC_PCNT_CHANNELS_PER_UNIT 2}\par
+00200 {\cf21 #define CONFIG_SOC_PCNT_THRES_POINT_PER_UNIT 2}\par
+00201 {\cf21 #define CONFIG_SOC_PCNT_SUPPORT_RUNTIME_THRES_UPDATE 1}\par
+00202 {\cf21 #define CONFIG_SOC_PCNT_SUPPORT_SLEEP_RETENTION 1}\par
+00203 {\cf21 #define CONFIG_SOC_RMT_GROUPS 1}\par
+00204 {\cf21 #define CONFIG_SOC_RMT_TX_CANDIDATES_PER_GROUP 2}\par
+00205 {\cf21 #define CONFIG_SOC_RMT_RX_CANDIDATES_PER_GROUP 2}\par
+00206 {\cf21 #define CONFIG_SOC_RMT_CHANNELS_PER_GROUP 4}\par
+00207 {\cf21 #define CONFIG_SOC_RMT_MEM_WORDS_PER_CHANNEL 48}\par
+00208 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_RX_PINGPONG 1}\par
+00209 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_RX_DEMODULATION 1}\par
+00210 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_ASYNC_STOP 1}\par
+00211 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_TX_LOOP_COUNT 1}\par
+00212 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP 1}\par
+00213 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_TX_SYNCHRO 1}\par
+00214 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_TX_CARRIER_DATA_ONLY 1}\par
+00215 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_XTAL 1}\par
+00216 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_RC_FAST 1}\par
+00217 {\cf21 #define CONFIG_SOC_RMT_SUPPORT_SLEEP_RETENTION 1}\par
+00218 {\cf21 #define CONFIG_SOC_MCPWM_GROUPS 1}\par
+00219 {\cf21 #define CONFIG_SOC_MCPWM_TIMERS_PER_GROUP 3}\par
+00220 {\cf21 #define CONFIG_SOC_MCPWM_OPERATORS_PER_GROUP 3}\par
+00221 {\cf21 #define CONFIG_SOC_MCPWM_COMPARATORS_PER_OPERATOR 2}\par
+00222 {\cf21 #define CONFIG_SOC_MCPWM_GENERATORS_PER_OPERATOR 2}\par
+00223 {\cf21 #define CONFIG_SOC_MCPWM_TRIGGERS_PER_OPERATOR 2}\par
+00224 {\cf21 #define CONFIG_SOC_MCPWM_GPIO_FAULTS_PER_GROUP 3}\par
+00225 {\cf21 #define CONFIG_SOC_MCPWM_CAPTURE_TIMERS_PER_GROUP 1}\par
+00226 {\cf21 #define CONFIG_SOC_MCPWM_CAPTURE_CHANNELS_PER_TIMER 3}\par
+00227 {\cf21 #define CONFIG_SOC_MCPWM_GPIO_SYNCHROS_PER_GROUP 3}\par
+00228 {\cf21 #define CONFIG_SOC_MCPWM_SWSYNC_CAN_PROPAGATE 1}\par
+00229 {\cf21 #define CONFIG_SOC_MCPWM_SUPPORT_ETM 1}\par
+00230 {\cf21 #define CONFIG_SOC_MCPWM_CAPTURE_CLK_FROM_GROUP 1}\par
+00231 {\cf21 #define CONFIG_SOC_MCPWM_SUPPORT_SLEEP_RETENTION 1}\par
+00232 {\cf21 #define CONFIG_SOC_PARLIO_GROUPS 1}\par
+00233 {\cf21 #define CONFIG_SOC_PARLIO_TX_UNITS_PER_GROUP 1}\par
+00234 {\cf21 #define CONFIG_SOC_PARLIO_RX_UNITS_PER_GROUP 1}\par
+00235 {\cf21 #define CONFIG_SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH 16}\par
+00236 {\cf21 #define CONFIG_SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH 16}\par
+00237 {\cf21 #define CONFIG_SOC_PARLIO_TX_RX_SHARE_INTERRUPT 1}\par
+00238 {\cf21 #define CONFIG_SOC_PARLIO_SUPPORT_SLEEP_RETENTION 1}\par
+00239 {\cf21 #define CONFIG_SOC_MPI_MEM_BLOCKS_NUM 4}\par
+00240 {\cf21 #define CONFIG_SOC_MPI_OPERATIONS_NUM 3}\par
+00241 {\cf21 #define CONFIG_SOC_RSA_MAX_BIT_LEN 3072}\par
+00242 {\cf21 #define CONFIG_SOC_SHA_DMA_MAX_BUFFER_SIZE 3968}\par
+00243 {\cf21 #define CONFIG_SOC_SHA_SUPPORT_DMA 1}\par
+00244 {\cf21 #define CONFIG_SOC_SHA_SUPPORT_RESUME 1}\par
+00245 {\cf21 #define CONFIG_SOC_SHA_GDMA 1}\par
+00246 {\cf21 #define CONFIG_SOC_SHA_SUPPORT_SHA1 1}\par
+00247 {\cf21 #define CONFIG_SOC_SHA_SUPPORT_SHA224 1}\par
+00248 {\cf21 #define CONFIG_SOC_SHA_SUPPORT_SHA256 1}\par
+00249 {\cf21 #define CONFIG_SOC_SDM_GROUPS 1}\par
+00250 {\cf21 #define CONFIG_SOC_SDM_CHANNELS_PER_GROUP 4}\par
+00251 {\cf21 #define CONFIG_SOC_SDM_CLK_SUPPORT_PLL_F80M 1}\par
+00252 {\cf21 #define CONFIG_SOC_SDM_CLK_SUPPORT_XTAL 1}\par
+00253 {\cf21 #define CONFIG_SOC_SPI_PERIPH_NUM 2}\par
+00254 {\cf21 #define CONFIG_SOC_SPI_MAX_CS_NUM 6}\par
+00255 {\cf21 #define CONFIG_SOC_SPI_MAXIMUM_BUFFER_SIZE 64}\par
+00256 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_DDRCLK 1}\par
+00257 {\cf21 #define CONFIG_SOC_SPI_SLAVE_SUPPORT_SEG_TRANS 1}\par
+00258 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_CD_SIG 1}\par
+00259 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_CONTINUOUS_TRANS 1}\par
+00260 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_SLAVE_HD_VER2 1}\par
+00261 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_SLEEP_RETENTION 1}\par
+00262 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_CLK_XTAL 1}\par
+00263 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_CLK_PLL_F80M 1}\par
+00264 {\cf21 #define CONFIG_SOC_SPI_SUPPORT_CLK_RC_FAST 1}\par
+00265 {\cf21 #define CONFIG_SOC_SPI_SCT_SUPPORTED 1}\par
+00266 {\cf21 #define CONFIG_SOC_SPI_SCT_REG_NUM 14}\par
+00267 {\cf21 #define CONFIG_SOC_SPI_SCT_BUFFER_NUM_MAX 1}\par
+00268 {\cf21 #define CONFIG_SOC_SPI_SCT_CONF_BITLEN_MAX 0x3FFFA}\par
+00269 {\cf21 #define CONFIG_SOC_MEMSPI_IS_INDEPENDENT 1}\par
+00270 {\cf21 #define CONFIG_SOC_SPI_MAX_PRE_DIVIDER 16}\par
+00271 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE 1}\par
+00272 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND 1}\par
+00273 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_RESUME 1}\par
+00274 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_IDLE_INTR 1}\par
+00275 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_SW_SUSPEND 1}\par
+00276 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_CHECK_SUS 1}\par
+00277 {\cf21 #define CONFIG_SOC_SPI_MEM_SUPPORT_WRAP 1}\par
+00278 {\cf21 #define CONFIG_SOC_MEMSPI_SRC_FREQ_80M_SUPPORTED 1}\par
+00279 {\cf21 #define CONFIG_SOC_MEMSPI_SRC_FREQ_40M_SUPPORTED 1}\par
+00280 {\cf21 #define CONFIG_SOC_MEMSPI_SRC_FREQ_20M_SUPPORTED 1}\par
+00281 {\cf21 #define CONFIG_SOC_SYSTIMER_COUNTER_NUM 2}\par
+00282 {\cf21 #define CONFIG_SOC_SYSTIMER_ALARM_NUM 3}\par
+00283 {\cf21 #define CONFIG_SOC_SYSTIMER_BIT_WIDTH_LO 32}\par
+00284 {\cf21 #define CONFIG_SOC_SYSTIMER_BIT_WIDTH_HI 20}\par
+00285 {\cf21 #define CONFIG_SOC_SYSTIMER_FIXED_DIVIDER 1}\par
+00286 {\cf21 #define CONFIG_SOC_SYSTIMER_SUPPORT_RC_FAST 1}\par
+00287 {\cf21 #define CONFIG_SOC_SYSTIMER_INT_LEVEL 1}\par
+00288 {\cf21 #define CONFIG_SOC_SYSTIMER_ALARM_MISS_COMPENSATE 1}\par
+00289 {\cf21 #define CONFIG_SOC_SYSTIMER_SUPPORT_ETM 1}\par
+00290 {\cf21 #define CONFIG_SOC_LP_TIMER_BIT_WIDTH_LO 32}\par
+00291 {\cf21 #define CONFIG_SOC_LP_TIMER_BIT_WIDTH_HI 16}\par
+00292 {\cf21 #define CONFIG_SOC_TIMER_GROUPS 2}\par
+00293 {\cf21 #define CONFIG_SOC_TIMER_GROUP_TIMERS_PER_GROUP 1}\par
+00294 {\cf21 #define CONFIG_SOC_TIMER_GROUP_COUNTER_BIT_WIDTH 54}\par
+00295 {\cf21 #define CONFIG_SOC_TIMER_GROUP_SUPPORT_XTAL 1}\par
+00296 {\cf21 #define CONFIG_SOC_TIMER_GROUP_SUPPORT_RC_FAST 1}\par
+00297 {\cf21 #define CONFIG_SOC_TIMER_GROUP_TOTAL_TIMERS 2}\par
+00298 {\cf21 #define CONFIG_SOC_TIMER_SUPPORT_ETM 1}\par
+00299 {\cf21 #define CONFIG_SOC_TIMER_SUPPORT_SLEEP_RETENTION 1}\par
+00300 {\cf21 #define CONFIG_SOC_MWDT_SUPPORT_XTAL 1}\par
+00301 {\cf21 #define CONFIG_SOC_MWDT_SUPPORT_SLEEP_RETENTION 1}\par
+00302 {\cf21 #define CONFIG_SOC_TWAI_CONTROLLER_NUM 2}\par
+00303 {\cf21 #define CONFIG_SOC_TWAI_MASK_FILTER_NUM 1}\par
+00304 {\cf21 #define CONFIG_SOC_TWAI_CLK_SUPPORT_XTAL 1}\par
+00305 {\cf21 #define CONFIG_SOC_TWAI_BRP_MIN 2}\par
+00306 {\cf21 #define CONFIG_SOC_TWAI_BRP_MAX 32768}\par
+00307 {\cf21 #define CONFIG_SOC_TWAI_SUPPORTS_RX_STATUS 1}\par
+00308 {\cf21 #define CONFIG_SOC_TWAI_SUPPORT_SLEEP_RETENTION 1}\par
+00309 {\cf21 #define CONFIG_SOC_EFUSE_DIS_DOWNLOAD_ICACHE 1}\par
+00310 {\cf21 #define CONFIG_SOC_EFUSE_DIS_PAD_JTAG 1}\par
+00311 {\cf21 #define CONFIG_SOC_EFUSE_DIS_USB_JTAG 1}\par
+00312 {\cf21 #define CONFIG_SOC_EFUSE_DIS_DIRECT_BOOT 1}\par
+00313 {\cf21 #define CONFIG_SOC_EFUSE_SOFT_DIS_JTAG 1}\par
+00314 {\cf21 #define CONFIG_SOC_EFUSE_DIS_ICACHE 1}\par
+00315 {\cf21 #define CONFIG_SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK 1}\par
+00316 {\cf21 #define CONFIG_SOC_SECURE_BOOT_V2_RSA 1}\par
+00317 {\cf21 #define CONFIG_SOC_SECURE_BOOT_V2_ECC 1}\par
+00318 {\cf21 #define CONFIG_SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS 3}\par
+00319 {\cf21 #define CONFIG_SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS 1}\par
+00320 {\cf21 #define CONFIG_SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY 1}\par
+00321 {\cf21 #define CONFIG_SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX 64}\par
+00322 {\cf21 #define CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES 1}\par
+00323 {\cf21 #define CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES_128 1}\par
+00324 {\cf21 #define CONFIG_SOC_APM_CTRL_FILTER_SUPPORTED 1}\par
+00325 {\cf21 #define CONFIG_SOC_APM_LP_APM0_SUPPORTED 1}\par
+00326 {\cf21 #define CONFIG_SOC_APM_SUPPORT_LP_TEE_CTRL 1}\par
+00327 {\cf21 #define CONFIG_SOC_CRYPTO_DPA_PROTECTION_SUPPORTED 1}\par
+00328 {\cf21 #define CONFIG_SOC_UART_NUM 3}\par
+00329 {\cf21 #define CONFIG_SOC_UART_HP_NUM 2}\par
+00330 {\cf21 #define CONFIG_SOC_UART_LP_NUM 1}\par
+00331 {\cf21 #define CONFIG_SOC_UART_FIFO_LEN 128}\par
+00332 {\cf21 #define CONFIG_SOC_LP_UART_FIFO_LEN 16}\par
+00333 {\cf21 #define CONFIG_SOC_UART_BITRATE_MAX 5000000}\par
+00334 {\cf21 #define CONFIG_SOC_UART_SUPPORT_PLL_F80M_CLK 1}\par
+00335 {\cf21 #define CONFIG_SOC_UART_SUPPORT_RTC_CLK 1}\par
+00336 {\cf21 #define CONFIG_SOC_UART_SUPPORT_XTAL_CLK 1}\par
+00337 {\cf21 #define CONFIG_SOC_UART_SUPPORT_WAKEUP_INT 1}\par
+00338 {\cf21 #define CONFIG_SOC_UART_HAS_LP_UART 1}\par
+00339 {\cf21 #define CONFIG_SOC_UART_SUPPORT_SLEEP_RETENTION 1}\par
+00340 {\cf21 #define CONFIG_SOC_UART_SUPPORT_FSM_TX_WAIT_SEND 1}\par
+00341 {\cf21 #define CONFIG_SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN 5}\par
+00342 {\cf21 #define CONFIG_SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE 1}\par
+00343 {\cf21 #define CONFIG_SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE 1}\par
+00344 {\cf21 #define CONFIG_SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE 1}\par
+00345 {\cf21 #define CONFIG_SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE 1}\par
+00346 {\cf21 #define CONFIG_SOC_UHCI_NUM 1}\par
+00347 {\cf21 #define CONFIG_SOC_COEX_HW_PTI 1}\par
+00348 {\cf21 #define CONFIG_SOC_EXTERNAL_COEX_ADVANCE 1}\par
+00349 {\cf21 #define CONFIG_SOC_PHY_DIG_REGS_MEM_SIZE 21}\par
+00350 {\cf21 #define CONFIG_SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH 12}\par
+00351 {\cf21 #define CONFIG_SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH 1}\par
+00352 {\cf21 #define CONFIG_SOC_PM_SUPPORT_WIFI_WAKEUP 1}\par
+00353 {\cf21 #define CONFIG_SOC_PM_SUPPORT_BEACON_WAKEUP 1}\par
+00354 {\cf21 #define CONFIG_SOC_PM_SUPPORT_BT_WAKEUP 1}\par
+00355 {\cf21 #define CONFIG_SOC_PM_SUPPORT_EXT1_WAKEUP 1}\par
+00356 {\cf21 #define CONFIG_SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN 1}\par
+00357 {\cf21 #define CONFIG_SOC_PM_SUPPORT_CPU_PD 1}\par
+00358 {\cf21 #define CONFIG_SOC_PM_SUPPORT_MODEM_PD 1}\par
+00359 {\cf21 #define CONFIG_SOC_PM_SUPPORT_XTAL32K_PD 1}\par
+00360 {\cf21 #define CONFIG_SOC_PM_SUPPORT_RC32K_PD 1}\par
+00361 {\cf21 #define CONFIG_SOC_PM_SUPPORT_RC_FAST_PD 1}\par
+00362 {\cf21 #define CONFIG_SOC_PM_SUPPORT_VDDSDIO_PD 1}\par
+00363 {\cf21 #define CONFIG_SOC_PM_SUPPORT_TOP_PD 1}\par
+00364 {\cf21 #define CONFIG_SOC_PM_SUPPORT_HP_AON_PD 1}\par
+00365 {\cf21 #define CONFIG_SOC_PM_SUPPORT_MAC_BB_PD 1}\par
+00366 {\cf21 #define CONFIG_SOC_PM_SUPPORT_RTC_PERIPH_PD 1}\par
+00367 {\cf21 #define CONFIG_SOC_PM_SUPPORT_PMU_MODEM_STATE 1}\par
+00368 {\cf21 #define CONFIG_SOC_PM_SUPPORT_PMU_CLK_ICG 1}\par
+00369 {\cf21 #define CONFIG_SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY 1}\par
+00370 {\cf21 #define CONFIG_SOC_PM_CPU_RETENTION_BY_SW 1}\par
+00371 {\cf21 #define CONFIG_SOC_PM_MODEM_RETENTION_BY_REGDMA 1}\par
+00372 {\cf21 #define CONFIG_SOC_PM_RETENTION_HAS_CLOCK_BUG 1}\par
+00373 {\cf21 #define CONFIG_SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN 1}\par
+00374 {\cf21 #define CONFIG_SOC_PM_MODEM_RF_FLAG_UPDATE_WORKAROUND 1}\par
+00375 {\cf21 #define CONFIG_SOC_PM_PAU_LINK_NUM 4}\par
+00376 {\cf21 #define CONFIG_SOC_PM_PAU_REGDMA_LINK_MULTI_ADDR 1}\par
+00377 {\cf21 #define CONFIG_SOC_PM_PAU_REGDMA_LINK_WIFIMAC 1}\par
+00378 {\cf21 #define CONFIG_SOC_PM_PAU_REGDMA_UPDATE_CACHE_BEFORE_WAIT_COMPARE 1}\par
+00379 {\cf21 #define CONFIG_SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED 1}\par
+00380 {\cf21 #define CONFIG_SOC_PM_RETENTION_MODULE_NUM 32}\par
+00381 {\cf21 #define CONFIG_SOC_CLK_RC_FAST_SUPPORT_CALIBRATION 1}\par
+00382 {\cf21 #define CONFIG_SOC_MODEM_CLOCK_IS_INDEPENDENT 1}\par
+00383 {\cf21 #define CONFIG_SOC_CLK_XTAL32K_SUPPORTED 1}\par
+00384 {\cf21 #define CONFIG_SOC_CLK_OSC_SLOW_SUPPORTED 1}\par
+00385 {\cf21 #define CONFIG_SOC_CLK_RC32K_SUPPORTED 1}\par
+00386 {\cf21 #define CONFIG_SOC_CLK_LP_FAST_SUPPORT_XTAL_D2 1}\par
+00387 {\cf21 #define CONFIG_SOC_RCC_IS_INDEPENDENT 1}\par
+00388 {\cf21 #define CONFIG_SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE 1}\par
+00389 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC 1}\par
+00390 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL 1}\par
+00391 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_INTR_SUPPORT 1}\par
+00392 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_SUPPORT_ETM 1}\par
+00393 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION 1}\par
+00394 {\cf21 #define CONFIG_SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN 1}\par
+00395 {\cf21 #define CONFIG_SOC_RNG_CLOCK_IS_INDEPENDENT 1}\par
+00396 {\cf21 #define CONFIG_SOC_WIFI_HW_TSF 1}\par
+00397 {\cf21 #define CONFIG_SOC_WIFI_FTM_SUPPORT 1}\par
+00398 {\cf21 #define CONFIG_SOC_WIFI_GCMP_SUPPORT 1}\par
+00399 {\cf21 #define CONFIG_SOC_WIFI_WAPI_SUPPORT 1}\par
+00400 {\cf21 #define CONFIG_SOC_WIFI_TXOP_SUPPORT 1}\par
+00401 {\cf21 #define CONFIG_SOC_WIFI_CSI_SUPPORT 1}\par
+00402 {\cf21 #define CONFIG_SOC_WIFI_MESH_SUPPORT 1}\par
+00403 {\cf21 #define CONFIG_SOC_WIFI_HE_SUPPORT 1}\par
+00404 {\cf21 #define CONFIG_SOC_WIFI_MAC_VERSION_NUM 2}\par
+00405 {\cf21 #define CONFIG_SOC_BLE_SUPPORTED 1}\par
+00406 {\cf21 #define CONFIG_SOC_BLE_MESH_SUPPORTED 1}\par
+00407 {\cf21 #define CONFIG_SOC_ESP_NIMBLE_CONTROLLER 1}\par
+00408 {\cf21 #define CONFIG_SOC_BLE_50_SUPPORTED 1}\par
+00409 {\cf21 #define CONFIG_SOC_BLE_DEVICE_PRIVACY_SUPPORTED 1}\par
+00410 {\cf21 #define CONFIG_SOC_BLE_POWER_CONTROL_SUPPORTED 1}\par
+00411 {\cf21 #define CONFIG_SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED 1}\par
+00412 {\cf21 #define CONFIG_SOC_BLUFI_SUPPORTED 1}\par
+00413 {\cf21 #define CONFIG_SOC_BLE_MULTI_CONN_OPTIMIZATION 1}\par
+00414 {\cf21 #define CONFIG_SOC_BLE_PERIODIC_ADV_WITH_RESPONSE 1}\par
+00415 {\cf21 #define CONFIG_SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND 1}\par
+00416 {\cf21 #define CONFIG_SOC_PHY_COMBO_MODULE 1}\par
+00417 {\cf21 #define CONFIG_SOC_CAPS_NO_RESET_BY_ANA_BOD 1}\par
+00418 {\cf21 #define CONFIG_SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR 1}\par
+00419 {\cf21 #define CONFIG_SOC_LP_CORE_SUPPORT_ETM 1}\par
+00420 {\cf21 #define CONFIG_SOC_DEBUG_HAVE_OCD_STUB_BINS 1}\par
+00421 {\cf21 #define CONFIG_IDF_CMAKE 1}\par
+00422 {\cf21 #define CONFIG_IDF_TOOLCHAIN "gcc"}\par
+00423 {\cf21 #define CONFIG_IDF_TOOLCHAIN_GCC 1}\par
+00424 {\cf21 #define CONFIG_IDF_TARGET_ARCH_RISCV 1}\par
+00425 {\cf21 #define CONFIG_IDF_TARGET_ARCH "riscv"}\par
+00426 {\cf21 #define CONFIG_IDF_TARGET "esp32c6"}\par
+00427 {\cf21 #define CONFIG_IDF_INIT_VERSION "5.5.3"}\par
+00428 {\cf21 #define CONFIG_IDF_TARGET_ESP32C6 1}\par
+00429 {\cf21 #define CONFIG_IDF_FIRMWARE_CHIP_ID 0x000D}\par
+00430 {\cf21 #define CONFIG_APP_BUILD_TYPE_APP_2NDBOOT 1}\par
+00431 {\cf21 #define CONFIG_APP_BUILD_GENERATE_BINARIES 1}\par
+00432 {\cf21 #define CONFIG_APP_BUILD_BOOTLOADER 1}\par
+00433 {\cf21 #define CONFIG_APP_BUILD_USE_FLASH_SECTIONS 1}\par
+00434 {\cf21 #define CONFIG_BOOTLOADER_COMPILE_TIME_DATE 1}\par
+00435 {\cf21 #define CONFIG_BOOTLOADER_PROJECT_VER 1}\par
+00436 {\cf21 #define CONFIG_BOOTLOADER_OFFSET_IN_FLASH 0x0}\par
+00437 {\cf21 #define CONFIG_BOOTLOADER_COMPILER_OPTIMIZATION_SIZE 1}\par
+00438 {\cf21 #define CONFIG_BOOTLOADER_LOG_VERSION_1 1}\par
+00439 {\cf21 #define CONFIG_BOOTLOADER_LOG_VERSION 1}\par
+00440 {\cf21 #define CONFIG_BOOTLOADER_LOG_LEVEL_INFO 1}\par
+00441 {\cf21 #define CONFIG_BOOTLOADER_LOG_LEVEL 3}\par
+00442 {\cf21 #define CONFIG_BOOTLOADER_LOG_TIMESTAMP_SOURCE_CPU_TICKS 1}\par
+00443 {\cf21 #define CONFIG_BOOTLOADER_LOG_MODE_TEXT_EN 1}\par
+00444 {\cf21 #define CONFIG_BOOTLOADER_LOG_MODE_TEXT 1}\par
+00445 {\cf21 #define CONFIG_BOOTLOADER_FLASH_XMC_SUPPORT 1}\par
+00446 {\cf21 #define CONFIG_BOOTLOADER_REGION_PROTECTION_ENABLE 1}\par
+00447 {\cf21 #define CONFIG_BOOTLOADER_WDT_ENABLE 1}\par
+00448 {\cf21 #define CONFIG_BOOTLOADER_WDT_TIME_MS 9000}\par
+00449 {\cf21 #define CONFIG_BOOTLOADER_RESERVE_RTC_SIZE 0x0}\par
+00450 {\cf21 #define CONFIG_SECURE_BOOT_V2_RSA_SUPPORTED 1}\par
+00451 {\cf21 #define CONFIG_SECURE_BOOT_V2_ECC_SUPPORTED 1}\par
+00452 {\cf21 #define CONFIG_SECURE_BOOT_V2_PREFERRED 1}\par
+00453 {\cf21 #define CONFIG_SECURE_ROM_DL_MODE_ENABLED 1}\par
+00454 {\cf21 #define CONFIG_APP_COMPILE_TIME_DATE 1}\par
+00455 {\cf21 #define CONFIG_APP_RETRIEVE_LEN_ELF_SHA 16}\par
+00456 {\cf21 #define CONFIG_ESP_ROM_HAS_CRC_LE 1}\par
+00457 {\cf21 #define CONFIG_ESP_ROM_HAS_CRC_BE 1}\par
+00458 {\cf21 #define CONFIG_ESP_ROM_HAS_JPEG_DECODE 1}\par
+00459 {\cf21 #define CONFIG_ESP_ROM_UART_CLK_IS_XTAL 1}\par
+00460 {\cf21 #define CONFIG_ESP_ROM_USB_SERIAL_DEVICE_NUM 3}\par
+00461 {\cf21 #define CONFIG_ESP_ROM_HAS_RETARGETABLE_LOCKING 1}\par
+00462 {\cf21 #define CONFIG_ESP_ROM_GET_CLK_FREQ 1}\par
+00463 {\cf21 #define CONFIG_ESP_ROM_HAS_RVFPLIB 1}\par
+00464 {\cf21 #define CONFIG_ESP_ROM_HAS_HAL_WDT 1}\par
+00465 {\cf21 #define CONFIG_ESP_ROM_HAS_HAL_SYSTIMER 1}\par
+00466 {\cf21 #define CONFIG_ESP_ROM_SYSTIMER_INIT_PATCH 1}\par
+00467 {\cf21 #define CONFIG_ESP_ROM_HAS_HEAP_TLSF 1}\par
+00468 {\cf21 #define CONFIG_ESP_ROM_TLSF_CHECK_PATCH 1}\par
+00469 {\cf21 #define CONFIG_ESP_ROM_MULTI_HEAP_WALK_PATCH 1}\par
+00470 {\cf21 #define CONFIG_ESP_ROM_HAS_LAYOUT_TABLE 1}\par
+00471 {\cf21 #define CONFIG_ESP_ROM_HAS_SPI_FLASH 1}\par
+00472 {\cf21 #define CONFIG_ESP_ROM_HAS_SPI_FLASH_MMAP 1}\par
+00473 {\cf21 #define CONFIG_ESP_ROM_HAS_REGI2C_BUG 1}\par
+00474 {\cf21 #define CONFIG_ESP_ROM_HAS_NEWLIB 1}\par
+00475 {\cf21 #define CONFIG_ESP_ROM_HAS_NEWLIB_NORMAL_FORMAT 1}\par
+00476 {\cf21 #define CONFIG_ESP_ROM_REV0_HAS_NO_ECDSA_INTERFACE 1}\par
+00477 {\cf21 #define CONFIG_ESP_ROM_WDT_INIT_PATCH 1}\par
+00478 {\cf21 #define CONFIG_ESP_ROM_NEEDS_SET_CACHE_MMU_SIZE 1}\par
+00479 {\cf21 #define CONFIG_ESP_ROM_RAM_APP_NEEDS_MMU_INIT 1}\par
+00480 {\cf21 #define CONFIG_ESP_ROM_HAS_SW_FLOAT 1}\par
+00481 {\cf21 #define CONFIG_ESP_ROM_USB_OTG_NUM -1}\par
+00482 {\cf21 #define CONFIG_ESP_ROM_HAS_VERSION 1}\par
+00483 {\cf21 #define CONFIG_ESP_ROM_SUPPORT_DEEP_SLEEP_WAKEUP_STUB 1}\par
+00484 {\cf21 #define CONFIG_ESP_ROM_HAS_OUTPUT_PUTC_FUNC 1}\par
+00485 {\cf21 #define CONFIG_ESP_ROM_NO_USB_SERIAL_OUTPUT_API 1}\par
+00486 {\cf21 #define CONFIG_ESP_ROM_HAS_SUBOPTIMAL_NEWLIB_ON_MISALIGNED_MEMORY 1}\par
+00487 {\cf21 #define CONFIG_ESP_ROM_SUPPORT_SECURE_BOOT_FAST_WAKEUP 1}\par
+00488 {\cf21 #define CONFIG_BOOT_ROM_LOG_ALWAYS_ON 1}\par
+00489 {\cf21 #define CONFIG_SECURE_TEE_LOG_LEVEL 0}\par
+00490 {\cf21 #define CONFIG_ESPTOOLPY_FLASHMODE_DIO 1}\par
+00491 {\cf21 #define CONFIG_ESPTOOLPY_FLASH_SAMPLE_MODE_STR 1}\par
+00492 {\cf21 #define CONFIG_ESPTOOLPY_FLASHMODE "dio"}\par
+00493 {\cf21 #define CONFIG_ESPTOOLPY_FLASHFREQ_80M 1}\par
+00494 {\cf21 #define CONFIG_ESPTOOLPY_FLASHFREQ "80m"}\par
+00495 {\cf21 #define CONFIG_ESPTOOLPY_FLASHSIZE_8MB 1}\par
+00496 {\cf21 #define CONFIG_ESPTOOLPY_FLASHSIZE "8MB"}\par
+00497 {\cf21 #define CONFIG_ESPTOOLPY_BEFORE_RESET 1}\par
+00498 {\cf21 #define CONFIG_ESPTOOLPY_BEFORE "default_reset"}\par
+00499 {\cf21 #define CONFIG_ESPTOOLPY_AFTER_RESET 1}\par
+00500 {\cf21 #define CONFIG_ESPTOOLPY_AFTER "hard_reset"}\par
+00501 {\cf21 #define CONFIG_ESPTOOLPY_MONITOR_BAUD 115200}\par
+00502 {\cf21 #define CONFIG_PARTITION_TABLE_SINGLE_APP 1}\par
+00503 {\cf21 #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"}\par
+00504 {\cf21 #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"}\par
+00505 {\cf21 #define CONFIG_PARTITION_TABLE_OFFSET 0x8000}\par
+00506 {\cf21 #define CONFIG_PARTITION_TABLE_MD5 1}\par
+00507 {\cf21 #define CONFIG_COMPILER_OPTIMIZATION_DEBUG 1}\par
+00508 {\cf21 #define CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_ENABLE 1}\par
+00509 {\cf21 #define CONFIG_COMPILER_ASSERT_NDEBUG_EVALUATE 1}\par
+00510 {\cf21 #define CONFIG_COMPILER_FLOAT_LIB_FROM_RVFPLIB 1}\par
+00511 {\cf21 #define CONFIG_COMPILER_OPTIMIZATION_ASSERTION_LEVEL 2}\par
+00512 {\cf21 #define CONFIG_COMPILER_HIDE_PATHS_MACROS 1}\par
+00513 {\cf21 #define CONFIG_COMPILER_STACK_CHECK_MODE_NONE 1}\par
+00514 {\cf21 #define CONFIG_COMPILER_DISABLE_DEFAULT_ERRORS 1}\par
+00515 {\cf21 #define CONFIG_COMPILER_RT_LIB_GCCLIB 1}\par
+00516 {\cf21 #define CONFIG_COMPILER_RT_LIB_NAME "gcc"}\par
+00517 {\cf21 #define CONFIG_COMPILER_ORPHAN_SECTIONS_WARNING 1}\par
+00518 {\cf21 #define CONFIG_EFUSE_MAX_BLK_LEN 256}\par
+00519 {\cf21 #define CONFIG_ESP_ERR_TO_NAME_LOOKUP 1}\par
+00520 {\cf21 #define CONFIG_ESP_HW_SUPPORT_FUNC_IN_IRAM 1}\par
+00521 {\cf21 #define CONFIG_ESP32C6_REV_MIN_0 1}\par
+00522 {\cf21 #define CONFIG_ESP32C6_REV_MIN_FULL 0}\par
+00523 {\cf21 #define CONFIG_ESP_REV_MIN_FULL 0}\par
+00524 {\cf21 #define CONFIG_ESP32C6_REV_MAX_FULL 99}\par
+00525 {\cf21 #define CONFIG_ESP_REV_MAX_FULL 99}\par
+00526 {\cf21 #define CONFIG_ESP_EFUSE_BLOCK_REV_MIN_FULL 0}\par
+00527 {\cf21 #define CONFIG_ESP_EFUSE_BLOCK_REV_MAX_FULL 99}\par
+00528 {\cf21 #define CONFIG_ESP_MAC_ADDR_UNIVERSE_WIFI_STA 1}\par
+00529 {\cf21 #define CONFIG_ESP_MAC_ADDR_UNIVERSE_WIFI_AP 1}\par
+00530 {\cf21 #define CONFIG_ESP_MAC_ADDR_UNIVERSE_BT 1}\par
+00531 {\cf21 #define CONFIG_ESP_MAC_ADDR_UNIVERSE_ETH 1}\par
+00532 {\cf21 #define CONFIG_ESP_MAC_ADDR_UNIVERSE_IEEE802154 1}\par
+00533 {\cf21 #define CONFIG_ESP_MAC_UNIVERSAL_MAC_ADDRESSES_FOUR 1}\par
+00534 {\cf21 #define CONFIG_ESP_MAC_UNIVERSAL_MAC_ADDRESSES 4}\par
+00535 {\cf21 #define CONFIG_ESP32C6_UNIVERSAL_MAC_ADDRESSES_FOUR 1}\par
+00536 {\cf21 #define CONFIG_ESP32C6_UNIVERSAL_MAC_ADDRESSES 4}\par
+00537 {\cf21 #define CONFIG_ESP_SLEEP_FLASH_LEAKAGE_WORKAROUND 1}\par
+00538 {\cf21 #define CONFIG_ESP_SLEEP_GPIO_RESET_WORKAROUND 1}\par
+00539 {\cf21 #define CONFIG_ESP_SLEEP_WAIT_FLASH_READY_EXTRA_DELAY 0}\par
+00540 {\cf21 #define CONFIG_ESP_SLEEP_GPIO_ENABLE_INTERNAL_RESISTORS 1}\par
+00541 {\cf21 #define CONFIG_RTC_CLK_SRC_INT_RC 1}\par
+00542 {\cf21 #define CONFIG_RTC_CLK_CAL_CYCLES 1024}\par
+00543 {\cf21 #define CONFIG_RTC_CLK_FUNC_IN_IRAM 1}\par
+00544 {\cf21 #define CONFIG_RTC_TIME_FUNC_IN_IRAM 1}\par
+00545 {\cf21 #define CONFIG_ESP_PERIPH_CTRL_FUNC_IN_IRAM 1}\par
+00546 {\cf21 #define CONFIG_ESP_REGI2C_CTRL_FUNC_IN_IRAM 1}\par
+00547 {\cf21 #define CONFIG_GDMA_CTRL_FUNC_IN_IRAM 1}\par
+00548 {\cf21 #define CONFIG_GDMA_ISR_HANDLER_IN_IRAM 1}\par
+00549 {\cf21 #define CONFIG_GDMA_OBJ_DRAM_SAFE 1}\par
+00550 {\cf21 #define CONFIG_XTAL_FREQ_40 1}\par
+00551 {\cf21 #define CONFIG_XTAL_FREQ 40}\par
+00552 {\cf21 #define CONFIG_ESP_BROWNOUT_DET 1}\par
+00553 {\cf21 #define CONFIG_ESP_BROWNOUT_DET_LVL_SEL_7 1}\par
+00554 {\cf21 #define CONFIG_ESP_BROWNOUT_DET_LVL 7}\par
+00555 {\cf21 #define CONFIG_ESP_BROWNOUT_USE_INTR 1}\par
+00556 {\cf21 #define CONFIG_ESP_INTR_IN_IRAM 1}\par
+00557 {\cf21 #define CONFIG_ESP_ROM_PRINT_IN_IRAM 1}\par
+00558 {\cf21 #define CONFIG_ESP_CRYPTO_DPA_PROTECTION_AT_STARTUP 1}\par
+00559 {\cf21 #define CONFIG_ESP_CRYPTO_DPA_PROTECTION_LEVEL_LOW 1}\par
+00560 {\cf21 #define CONFIG_ESP_CRYPTO_DPA_PROTECTION_LEVEL 1}\par
+00561 {\cf21 #define CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_160 1}\par
+00562 {\cf21 #define CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ 160}\par
+00563 {\cf21 #define CONFIG_ESP_SYSTEM_IN_IRAM 1}\par
+00564 {\cf21 #define CONFIG_ESP_SYSTEM_PANIC_PRINT_REBOOT 1}\par
+00565 {\cf21 #define CONFIG_ESP_SYSTEM_PANIC_REBOOT_DELAY_SECONDS 0}\par
+00566 {\cf21 #define CONFIG_ESP_SYSTEM_SINGLE_CORE_MODE 1}\par
+00567 {\cf21 #define CONFIG_ESP_SYSTEM_RTC_FAST_MEM_AS_HEAP_DEPCHECK 1}\par
+00568 {\cf21 #define CONFIG_ESP_SYSTEM_ALLOW_RTC_FAST_MEM_AS_HEAP 1}\par
+00569 {\cf21 #define CONFIG_ESP_SYSTEM_NO_BACKTRACE 1}\par
+00570 {\cf21 #define CONFIG_ESP_SYSTEM_PMP_IDRAM_SPLIT 1}\par
+00571 {\cf21 #define CONFIG_ESP_SYSTEM_EVENT_QUEUE_SIZE 32}\par
+00572 {\cf21 #define CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE 2304}\par
+00573 {\cf21 #define CONFIG_ESP_MAIN_TASK_STACK_SIZE 3584}\par
+00574 {\cf21 #define CONFIG_ESP_MAIN_TASK_AFFINITY_CPU0 1}\par
+00575 {\cf21 #define CONFIG_ESP_MAIN_TASK_AFFINITY 0x0}\par
+00576 {\cf21 #define CONFIG_ESP_MINIMAL_SHARED_STACK_SIZE 2048}\par
+00577 {\cf21 #define CONFIG_ESP_CONSOLE_UART_DEFAULT 1}\par
+00578 {\cf21 #define CONFIG_ESP_CONSOLE_SECONDARY_USB_SERIAL_JTAG 1}\par
+00579 {\cf21 #define CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG_ENABLED 1}\par
+00580 {\cf21 #define CONFIG_ESP_CONSOLE_UART 1}\par
+00581 {\cf21 #define CONFIG_ESP_CONSOLE_UART_NUM 0}\par
+00582 {\cf21 #define CONFIG_ESP_CONSOLE_ROM_SERIAL_PORT_NUM 0}\par
+00583 {\cf21 #define CONFIG_ESP_CONSOLE_UART_BAUDRATE 115200}\par
+00584 {\cf21 #define CONFIG_ESP_INT_WDT 1}\par
+00585 {\cf21 #define CONFIG_ESP_INT_WDT_TIMEOUT_MS 300}\par
+00586 {\cf21 #define CONFIG_ESP_TASK_WDT_EN 1}\par
+00587 {\cf21 #define CONFIG_ESP_TASK_WDT_INIT 1}\par
+00588 {\cf21 #define CONFIG_ESP_TASK_WDT_TIMEOUT_S 5}\par
+00589 {\cf21 #define CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0 1}\par
+00590 {\cf21 #define CONFIG_ESP_DEBUG_OCDAWARE 1}\par
+00591 {\cf21 #define CONFIG_ESP_SYSTEM_CHECK_INT_LEVEL_4 1}\par
+00592 {\cf21 #define CONFIG_ESP_SYSTEM_HW_STACK_GUARD 1}\par
+00593 {\cf21 #define CONFIG_ESP_SYSTEM_BBPLL_RECALIB 1}\par
+00594 {\cf21 #define CONFIG_ESP_SYSTEM_HW_PC_RECORD 1}\par
+00595 {\cf21 #define CONFIG_ESP_IPC_TASK_STACK_SIZE 1024}\par
+00596 {\cf21 #define CONFIG_FREERTOS_UNICORE 1}\par
+00597 {\cf21 #define CONFIG_FREERTOS_HZ 100}\par
+00598 {\cf21 #define CONFIG_FREERTOS_OPTIMIZED_SCHEDULER 1}\par
+00599 {\cf21 #define CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY 1}\par
+00600 {\cf21 #define CONFIG_FREERTOS_THREAD_LOCAL_STORAGE_POINTERS 1}\par
+00601 {\cf21 #define CONFIG_FREERTOS_IDLE_TASK_STACKSIZE 1536}\par
+00602 {\cf21 #define CONFIG_FREERTOS_MAX_TASK_NAME_LEN 16}\par
+00603 {\cf21 #define CONFIG_FREERTOS_USE_TIMERS 1}\par
+00604 {\cf21 #define CONFIG_FREERTOS_TIMER_SERVICE_TASK_NAME "Tmr Svc"}\par
+00605 {\cf21 #define CONFIG_FREERTOS_TIMER_TASK_NO_AFFINITY 1}\par
+00606 {\cf21 #define CONFIG_FREERTOS_TIMER_SERVICE_TASK_CORE_AFFINITY 0x7FFFFFFF}\par
+00607 {\cf21 #define CONFIG_FREERTOS_TIMER_TASK_PRIORITY 1}\par
+00608 {\cf21 #define CONFIG_FREERTOS_TIMER_TASK_STACK_DEPTH 2048}\par
+00609 {\cf21 #define CONFIG_FREERTOS_TIMER_QUEUE_LENGTH 10}\par
+00610 {\cf21 #define CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE 0}\par
+00611 {\cf21 #define CONFIG_FREERTOS_TASK_NOTIFICATION_ARRAY_ENTRIES 1}\par
+00612 {\cf21 #define CONFIG_FREERTOS_TASK_FUNCTION_WRAPPER 1}\par
+00613 {\cf21 #define CONFIG_FREERTOS_TLSP_DELETION_CALLBACKS 1}\par
+00614 {\cf21 #define CONFIG_FREERTOS_CHECK_MUTEX_GIVEN_BY_OWNER 1}\par
+00615 {\cf21 #define CONFIG_FREERTOS_ISR_STACKSIZE 1536}\par
+00616 {\cf21 #define CONFIG_FREERTOS_INTERRUPT_BACKTRACE 1}\par
+00617 {\cf21 #define CONFIG_FREERTOS_TICK_SUPPORT_SYSTIMER 1}\par
+00618 {\cf21 #define CONFIG_FREERTOS_CORETIMER_SYSTIMER_LVL1 1}\par
+00619 {\cf21 #define CONFIG_FREERTOS_SYSTICK_USES_SYSTIMER 1}\par
+00620 {\cf21 #define CONFIG_FREERTOS_PORT 1}\par
+00621 {\cf21 #define CONFIG_FREERTOS_NO_AFFINITY 0x7FFFFFFF}\par
+00622 {\cf21 #define CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION 1}\par
+00623 {\cf21 #define CONFIG_FREERTOS_DEBUG_OCDAWARE 1}\par
+00624 {\cf21 #define CONFIG_FREERTOS_ENABLE_TASK_SNAPSHOT 1}\par
+00625 {\cf21 #define CONFIG_FREERTOS_PLACE_SNAPSHOT_FUNS_INTO_FLASH 1}\par
+00626 {\cf21 #define CONFIG_FREERTOS_NUMBER_OF_CORES 1}\par
+00627 {\cf21 #define CONFIG_FREERTOS_IN_IRAM 1}\par
+00628 {\cf21 #define CONFIG_HAL_ASSERTION_EQUALS_SYSTEM 1}\par
+00629 {\cf21 #define CONFIG_HAL_DEFAULT_ASSERTION_LEVEL 2}\par
+00630 {\cf21 #define CONFIG_HAL_SYSTIMER_USE_ROM_IMPL 1}\par
+00631 {\cf21 #define CONFIG_HAL_WDT_USE_ROM_IMPL 1}\par
+00632 {\cf21 #define CONFIG_LOG_VERSION_1 1}\par
+00633 {\cf21 #define CONFIG_LOG_VERSION 1}\par
+00634 {\cf21 #define CONFIG_LOG_DEFAULT_LEVEL_INFO 1}\par
+00635 {\cf21 #define CONFIG_LOG_DEFAULT_LEVEL 3}\par
+00636 {\cf21 #define CONFIG_LOG_MAXIMUM_EQUALS_DEFAULT 1}\par
+00637 {\cf21 #define CONFIG_LOG_MAXIMUM_LEVEL 3}\par
+00638 {\cf21 #define CONFIG_LOG_DYNAMIC_LEVEL_CONTROL 1}\par
+00639 {\cf21 #define CONFIG_LOG_TAG_LEVEL_IMPL_CACHE_AND_LINKED_LIST 1}\par
+00640 {\cf21 #define CONFIG_LOG_TAG_LEVEL_CACHE_BINARY_MIN_HEAP 1}\par
+00641 {\cf21 #define CONFIG_LOG_TAG_LEVEL_IMPL_CACHE_SIZE 31}\par
+00642 {\cf21 #define CONFIG_LOG_COLORS 1}\par
+00643 {\cf21 #define CONFIG_LOG_TIMESTAMP_SOURCE_RTOS 1}\par
+00644 {\cf21 #define CONFIG_LOG_MODE_TEXT_EN 1}\par
+00645 {\cf21 #define CONFIG_LOG_MODE_TEXT 1}\par
+00646 {\cf21 #define CONFIG_LOG_IN_IRAM 1}\par
+00647 {\cf21 #define CONFIG_LIBC_NEWLIB 1}\par
+00648 {\cf21 #define CONFIG_LIBC_MISC_IN_IRAM 1}\par
+00649 {\cf21 #define CONFIG_LIBC_LOCKS_PLACE_IN_IRAM 1}\par
+00650 {\cf21 #define CONFIG_LIBC_TIME_SYSCALL_USE_RTC_HRT 1}\par
+00651 {\cf21 #define CONFIG_MMU_PAGE_SIZE_64KB 1}\par
+00652 {\cf21 #define CONFIG_MMU_PAGE_MODE "64KB"}\par
+00653 {\cf21 #define CONFIG_MMU_PAGE_SIZE 0x10000}\par
+00654 {\cf21 #define CONFIG_SPI_FLASH_BROWNOUT_RESET_XMC 1}\par
+00655 {\cf21 #define CONFIG_SPI_FLASH_BROWNOUT_RESET 1}\par
+00656 {\cf21 #define CONFIG_SPI_FLASH_SUSPEND_TSUS_VAL_US 50}\par
+00657 {\cf21 #define CONFIG_SPI_FLASH_PLACE_FUNCTIONS_IN_IRAM 1}\par
+00658 {\cf21 #define CONFIG_SPI_FLASH_ROM_DRIVER_PATCH 1}\par
+00659 {\cf21 #define CONFIG_SPI_FLASH_DANGEROUS_WRITE_ABORTS 1}\par
+00660 {\cf21 #define CONFIG_SPI_FLASH_YIELD_DURING_ERASE 1}\par
+00661 {\cf21 #define CONFIG_SPI_FLASH_ERASE_YIELD_DURATION_MS 20}\par
+00662 {\cf21 #define CONFIG_SPI_FLASH_ERASE_YIELD_TICKS 1}\par
+00663 {\cf21 #define CONFIG_SPI_FLASH_WRITE_CHUNK_SIZE 8192}\par
+00664 {\cf21 #define CONFIG_SPI_FLASH_VENDOR_XMC_SUPPORT_ENABLED 1}\par
+00665 {\cf21 #define CONFIG_SPI_FLASH_VENDOR_GD_SUPPORT_ENABLED 1}\par
+00666 {\cf21 #define CONFIG_SPI_FLASH_ENABLE_ENCRYPTED_READ_WRITE 1}\par
+00667 \par
+00668 {\cf20 /* List of deprecated options */}\par
+00669 {\cf21 #define CONFIG_BROWNOUT_DET CONFIG_ESP_BROWNOUT_DET}\par
+00670 {\cf21 #define CONFIG_BROWNOUT_DET_LVL CONFIG_ESP_BROWNOUT_DET_LVL}\par
+00671 {\cf21 #define CONFIG_BROWNOUT_DET_LVL_SEL_7 CONFIG_ESP_BROWNOUT_DET_LVL_SEL_7}\par
+00672 {\cf21 #define CONFIG_COMPILER_OPTIMIZATION_DEFAULT CONFIG_COMPILER_OPTIMIZATION_DEBUG}\par
+00673 {\cf21 #define CONFIG_COMPILER_OPTIMIZATION_LEVEL_DEBUG CONFIG_COMPILER_OPTIMIZATION_DEBUG}\par
+00674 {\cf21 #define CONFIG_CONSOLE_UART CONFIG_ESP_CONSOLE_UART}\par
+00675 {\cf21 #define CONFIG_CONSOLE_UART_BAUDRATE CONFIG_ESP_CONSOLE_UART_BAUDRATE}\par
+00676 {\cf21 #define CONFIG_CONSOLE_UART_DEFAULT CONFIG_ESP_CONSOLE_UART_DEFAULT}\par
+00677 {\cf21 #define CONFIG_CONSOLE_UART_NUM CONFIG_ESP_CONSOLE_UART_NUM}\par
+00678 {\cf21 #define CONFIG_ESP_SYSTEM_BROWNOUT_INTR CONFIG_ESP_BROWNOUT_USE_INTR}\par
+00679 {\cf21 #define CONFIG_ESP_TASK_WDT CONFIG_ESP_TASK_WDT_INIT}\par
+00680 {\cf21 #define CONFIG_FLASHMODE_DIO CONFIG_ESPTOOLPY_FLASHMODE_DIO}\par
+00681 {\cf21 #define CONFIG_INT_WDT CONFIG_ESP_INT_WDT}\par
+00682 {\cf21 #define CONFIG_INT_WDT_TIMEOUT_MS CONFIG_ESP_INT_WDT_TIMEOUT_MS}\par
+00683 {\cf21 #define CONFIG_IPC_TASK_STACK_SIZE CONFIG_ESP_IPC_TASK_STACK_SIZE}\par
+00684 {\cf21 #define CONFIG_LOG_BOOTLOADER_LEVEL CONFIG_BOOTLOADER_LOG_LEVEL}\par
+00685 {\cf21 #define CONFIG_LOG_BOOTLOADER_LEVEL_INFO CONFIG_BOOTLOADER_LOG_LEVEL_INFO}\par
+00686 {\cf21 #define CONFIG_MAIN_TASK_STACK_SIZE CONFIG_ESP_MAIN_TASK_STACK_SIZE}\par
+00687 {\cf21 #define CONFIG_MONITOR_BAUD CONFIG_ESPTOOLPY_MONITOR_BAUD}\par
+00688 {\cf21 #define CONFIG_NEWLIB_TIME_SYSCALL_USE_RTC_HRT CONFIG_LIBC_TIME_SYSCALL_USE_RTC_HRT}\par
+00689 {\cf21 #define CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_ENABLE}\par
+00690 {\cf21 #define CONFIG_OPTIMIZATION_ASSERTION_LEVEL CONFIG_COMPILER_OPTIMIZATION_ASSERTION_LEVEL}\par
+00691 {\cf21 #define CONFIG_OPTIMIZATION_LEVEL_DEBUG CONFIG_COMPILER_OPTIMIZATION_DEBUG}\par
+00692 {\cf21 #define CONFIG_PERIPH_CTRL_FUNC_IN_IRAM CONFIG_ESP_PERIPH_CTRL_FUNC_IN_IRAM}\par
+00693 {\cf21 #define CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS CONFIG_SPI_FLASH_DANGEROUS_WRITE_ABORTS}\par
+00694 {\cf21 #define CONFIG_STACK_CHECK_NONE CONFIG_COMPILER_STACK_CHECK_MODE_NONE}\par
+00695 {\cf21 #define CONFIG_SYSTEM_EVENT_QUEUE_SIZE CONFIG_ESP_SYSTEM_EVENT_QUEUE_SIZE}\par
+00696 {\cf21 #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE}\par
+00697 {\cf21 #define CONFIG_TASK_WDT CONFIG_ESP_TASK_WDT_INIT}\par
+00698 {\cf21 #define CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0 CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0}\par
+00699 {\cf21 #define CONFIG_TASK_WDT_TIMEOUT_S CONFIG_ESP_TASK_WDT_TIMEOUT_S}\par
+00700 {\cf21 #define CONFIG_TIMER_QUEUE_LENGTH CONFIG_FREERTOS_TIMER_QUEUE_LENGTH}\par
+00701 {\cf21 #define CONFIG_TIMER_TASK_PRIORITY CONFIG_FREERTOS_TIMER_TASK_PRIORITY}\par
+00702 {\cf21 #define CONFIG_TIMER_TASK_STACK_DEPTH CONFIG_FREERTOS_TIMER_TASK_STACK_DEPTH}\par
+}
+}
