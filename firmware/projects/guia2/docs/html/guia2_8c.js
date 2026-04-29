@@ -1,0 +1,25 @@
+var guia2_8c =
+[
+    [ "DEBOUNCE_TIME", "guia2_8c.html#a00aef9e8dd001a49f8717031d84b2c6c", null ],
+    [ "DIGIT_OFF", "guia2_8c.html#abc35aa884d04aefccad2716ca9c3af1f", null ],
+    [ "DIGIT_ON", "guia2_8c.html#acc788879dcf68ee471ed1f0c669b748b", null ],
+    [ "DIGITS", "guia2_8c.html#a28c8bd90ea71ec24e5f43f413a9ee8b4", null ],
+    [ "DIST_MAX", "guia2_8c.html#ad1f7f78b7e7843ca8a2f94fcc8482ceb", null ],
+    [ "DIST_MED", "guia2_8c.html#a13a492b25e1150cb5fac5fdd5f300dcd", null ],
+    [ "DIST_MIN", "guia2_8c.html#a9f80a58781e2245b940e91a5798e6ee9", null ],
+    [ "MUX_DELAY", "guia2_8c.html#a6f30e5ac85efb6ea9a27383831936a98", null ],
+    [ "REFRESH_TIME", "guia2_8c.html#a45a64d025faf2f8499d2192c5b033a4b", null ],
+    [ "app_main", "guia2_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70", null ],
+    [ "Convertir_Num_a_BCD", "guia2_8c.html#a8057dd4b5677ed17b4b05c7ebbaad88d", null ],
+    [ "MostrarDisplay", "guia2_8c.html#a42f57886ce7c9bd4734125813c7b13cf", null ],
+    [ "setBcdToGpio", "guia2_8c.html#a4f23277af0db49ac8f9ec5ad90267d59", null ],
+    [ "Task_Botones", "guia2_8c.html#ac7800d1e3cd668b803eb3b438a961a36", null ],
+    [ "Task_Display", "guia2_8c.html#a54384872ac38f8118d56ab980f2b5a64", null ],
+    [ "Task_Medicion", "guia2_8c.html#ae19034e546cfa64a76283bb4624f4660", null ],
+    [ "bcdGpio", "guia2_8c.html#a5af55dc9a36881359b215b4dec695466", null ],
+    [ "distancia", "guia2_8c.html#aec40b15ff3098bdb2425eb4dc9c11a18", null ],
+    [ "distancia_hold", "guia2_8c.html#a93749e97c6ca13ceef3bf96ad92248be", null ],
+    [ "mantener", "guia2_8c.html#a66eb34a4e5e5fb8142a3471180198b3c", null ],
+    [ "medir", "guia2_8c.html#a750f32ce5c5bf53c0964f126de9d490f", null ],
+    [ "selGpio", "guia2_8c.html#a9ca8f91236f16308971b528a9b02c0ea", null ]
+];

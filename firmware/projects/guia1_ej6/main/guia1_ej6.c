@@ -64,7 +64,7 @@ void setBcdToGpio(uint8_t bcd, gpioConf_t *gpioArray)
     }
 }
 
-void displayNumber(uint32_t data, uint8_t digits, 
+void Mostrar_Numero(uint32_t data, uint8_t digits, 
                    gpioConf_t *bcdGpio, 
                    gpioConf_t *selGpio);
 
@@ -73,7 +73,7 @@ void displayNumber(uint32_t data, uint8_t digits,
  * @brief Muestra un número en un display multiplexado usando BCD
  *
  * Esta función recibe un número de 32 bits, lo convierte a un arreglo
- * de dígitos decimales (BCD) utilizando la función convertToBcdArray,
+ * de dígitos decimales (BCD) utilizando la función Convertir_Num_a_BCD,
  * y luego muestra cada dígito en un display LCD multiplexado utilizando
  * los GPIOs configurados.
  *
@@ -82,7 +82,7 @@ void displayNumber(uint32_t data, uint8_t digits,
  * @param bcdGpio Vector de GPIOs para los bits BCD (D1-D4)
  * @param selGpio Vector de GPIOs para selección de dígitos del display
  */
-void mostrar_numero(uint32_t data, uint8_t digits, 
+void Mostrar_Numero(uint32_t data, uint8_t digits, 
                    gpioConf_t *bcdGpio, 
                    gpioConf_t *selGpio)
 {
@@ -132,7 +132,7 @@ void app_main(void)
     for(int i = 0; i < 3; i++){
         GPIOInit(selGpio[i].pin, GPIO_OUTPUT);
     }
-    mostrar_numero(100, 3, bcdGpio, selGpio);
+    Mostrar_Numero(100, 3, bcdGpio, selGpio);
 
 }
 /*==================[end of file]============================================*/

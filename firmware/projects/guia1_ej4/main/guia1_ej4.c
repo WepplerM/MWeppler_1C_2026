@@ -31,13 +31,13 @@
 /*==================[internal data definition]===============================*/
 
 /*==================[internal functions declaration]=========================*/
-int8_t convertToBcdArray(uint32_t data, uint8_t digits, uint8_t *bcd_number);
+int8_t Convertir_Num_a_BCD(uint32_t data, uint8_t digits, uint8_t *bcd_number);
 
 /*==================[external functions definition]==========================*/
 void app_main(void){
     uint8_t resultado[5];
 
-    convertToBcdArray(531, 5, resultado);
+    Convertir_Num_a_BCD(531, 5, resultado);
 
     for(int i = 0; i < 5; i++){
         printf("%d ", resultado[i]);
