@@ -78,6 +78,16 @@ gpio_t bcdGpio[4] = {
     GPIO_23
 };
 /*==================[internal functions declaration]=========================*/
+
+/**
+ * @brief Convierte un número decimal a formato BCD.
+ * 
+ * @param data Número decimal a convertir.
+ * @param digits Cantidad de dígitos del display.
+ * @param bcd_number Arreglo donde se almacena el resultado en BCD.
+ * @return int8_t Retorna 0.
+ */
+
 int8_t Convertir_Num_a_BCD(uint32_t data, uint8_t digits, uint8_t *bcd_number)
 {
     for(int i = digits - 1; i >= 0; i--)
@@ -88,6 +98,13 @@ int8_t Convertir_Num_a_BCD(uint32_t data, uint8_t digits, uint8_t *bcd_number)
     return 0;
 }
 
+/**
+ * @brief Envía un dígito en formato BCD a los pines GPIO correspondientes.
+ * 
+ * @param bcd Valor BCD (0–9).
+ * @param gpioArray Arreglo de pines GPIO conectados al display.
+ */
+
 void setBcdToGpio(uint8_t bcd, gpio_t *gpioArray)
 {
     for(int i = 0; i < 4; i++)
@@ -96,6 +113,15 @@ void setBcdToGpio(uint8_t bcd, gpio_t *gpioArray)
         GPIOState(gpioArray[i], bit);
     }
 }
+
+/**
+ * @brief Muestra un número en el display de 7 segmentos mediante multiplexado.
+ * 
+ * Recorre los dígitos, envía el valor BCD correspondiente y activa cada dígito
+ * con un pequeño retardo para generar persistencia visual.
+ * 
+ * @param bcdArray Arreglo con los dígitos en BCD a mostrar.
+ */
 
 void MostrarDisplay(uint8_t *bcdArray){
 
@@ -116,6 +142,18 @@ void MostrarDisplay(uint8_t *bcdArray){
         for(volatile int k = 0; k < MUX_DELAY; k++);
     }
 }
+
+/**
+ * @brief Tarea encargada de la medición de distancia.
+ * 
+ * Lee el sensor ultrasónico cada 1 segundo cuando la medición está habilitada.
+ * Además, actualiza los LEDs según el rango de distancia medido.
+ * 
+ * - Si medir = false → apaga LEDs.
+ * - Si mantener = true → conserva el valor anterior.
+ * 
+ * @param pvParameter Parámetro no utilizado.
+ */
 
 void Task_Medicion(void *pvParameter){
 
@@ -157,6 +195,15 @@ void Task_Medicion(void *pvParameter){
     }
 }
 
+/**
+ * @brief Tarea encargada del refresco del display.
+ * 
+ * Actualiza constantemente el display mediante multiplexado para evitar flicker.
+ * Si la medición está desactivada, apaga todos los dígitos.
+ * 
+ * @param pvParameter Parámetro no utilizado.
+ */
+
 void Task_Display(void *pvParameter){
 
     uint8_t bcdArray[DIGITS];
@@ -176,6 +223,18 @@ void Task_Display(void *pvParameter){
         vTaskDelay(5 / portTICK_PERIOD_MS); // rápido → evita flicker
     }
 }
+
+/**
+ * @brief Tarea encargada de la lectura de botones.
+ * 
+ * Detecta flancos de subida para evitar rebotes y alterna estados:
+ * - SWITCH_1 → activa/desactiva medición.
+ * - SWITCH_2 → activa/desactiva modo mantener.
+ * 
+ * Los botones trabajan en lógica inversa (activo en LOW).
+ * 
+ * @param pvParameter Parámetro no utilizado.
+ */
 
 void Task_Botones(void *pvParameter){
 
@@ -205,6 +264,16 @@ void Task_Botones(void *pvParameter){
 }
 /*==================[external functions definition]==========================*/
 
+/**
+ * @brief Función principal del programa.
+ * 
+ * Inicializa periféricos (LEDs, switches, sensor ultrasónico y GPIOs)
+ * y crea las tareas del sistema:
+ * 
+ * - Task_Medicion → medición cada 1 segundo.
+ * - Task_Display → refresco continuo del display.
+ * - Task_Botones → lectura de botones con antirrebote.
+ */
 
 void app_main(void){
 
