@@ -64,10 +64,6 @@ void setBcdToGpio(uint8_t bcd, gpioConf_t *gpioArray)
     }
 }
 
-void Mostrar_Numero(uint32_t data, uint8_t digits, 
-                   gpioConf_t *bcdGpio, 
-                   gpioConf_t *selGpio);
-
 /*==================[external functions definition]==========================*/
 /**
  * @brief Muestra un número en un display multiplexado usando BCD

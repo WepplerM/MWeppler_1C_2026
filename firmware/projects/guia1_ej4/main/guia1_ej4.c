@@ -31,8 +31,15 @@
 /*==================[internal data definition]===============================*/
 
 /*==================[internal functions declaration]=========================*/
-int8_t Convertir_Num_a_BCD(uint32_t data, uint8_t digits, uint8_t *bcd_number);
-
+int8_t Convertir_Num_a_BCD(uint32_t data, uint8_t digits, uint8_t *bcd_number)
+{
+    for(int i = digits - 1; i >= 0; i--)
+    {
+        bcd_number[i] = data % 10;
+        data = data / 10;
+    }
+    return 0;
+}
 /*==================[external functions definition]==========================*/
 void app_main(void){
     uint8_t resultado[5];

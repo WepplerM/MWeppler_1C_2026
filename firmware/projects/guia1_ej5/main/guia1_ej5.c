@@ -33,6 +33,12 @@
 
 /*==================[internal data definition]===============================*/
 
+typedef struct
+{
+    gpio_t pin;    /*!< Número de pin del GPIO */
+    io_t dir;      /*!< Dirección: '0' entrada; '1' salida */
+} gpioConf_t;
+
 /*==================[internal functions declaration]=========================*/
 
 /*==================[external functions definition]==========================*/
@@ -62,17 +68,5 @@ void app_main(void){
     // Enviar BCD (ej: 5 → 0101)
     setBcdToGpio(0x05, gpioVector);
 }
-#include "gpio_mcu.h"
 
-void setBcdToGpio(uint8_t bcd, gpioConf_t *gpioArray)
-{
-    for(int i = 0; i < 4; i++)
-    {
-        // Extraer bit i
-        uint8_t bit = (bcd >> i) & 0x01;
-
-        // Escribir en el GPIO correspondiente
-        GPIOWrite(gpioArray[i].pin, bit);
-    }
-}
 /*==================[end of file]============================================*/
