@@ -19,13 +19,18 @@
  *
  * |   Date	    | Description                                    						|
  * |:----------:|:----------------------------------------------------------------------|
- * | 22/03/2024 | Document creation		                         						|
+ * | 04/06/2026 | Document creation		                         						|
  * 
  **/
 
 /*==================[inclusions]=============================================*/
 #include <stdbool.h>
 #include <stdint.h>
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+#include "ble_mcu.h"
 /*==================[macros]=================================================*/
 #define BLE_NO_INT	0		/*!< Flag used when no reading interruption is required */
 /*==================[typedef]================================================*/
