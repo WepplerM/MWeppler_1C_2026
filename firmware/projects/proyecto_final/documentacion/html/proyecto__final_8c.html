@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Integrador Electronica Porgramable: Referencia del archivo C:/Users/Weppler/Documents/0_FACULTAD/5_QUINTO/PRIMER CUATRIMESTRE/PROGRAMABLE/MWeppler_1C_2026/firmware/projects/proyecto_final/main/proyecto_final.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Integrador Electronica Porgramable<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('proyecto__final_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo proyecto_final.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ble__mcu_8h_source.html">ble_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio__mcu_8h_source.html">gpio_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buzzer_8h_source.html">buzzer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buzzer__melodies_8h_source.html">buzzer_melodies.h</a>&quot;</code><br />
+</div>
+<p><a href="proyecto__final_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a7a3ccd8a43b5c5e8a4d573780da1fd4a" id="r_a7a3ccd8a43b5c5e8a4d573780da1fd4a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7a3ccd8a43b5c5e8a4d573780da1fd4a">LED_BT</a>&#160;&#160;&#160;<a class="el" href="group___l_e_d.html#ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b">LED_1</a></td></tr>
+<tr class="memitem:a3df1b4cad09974bfc68858fad7cdc054" id="r_a3df1b4cad09974bfc68858fad7cdc054"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3df1b4cad09974bfc68858fad7cdc054">CONFIG_BLINK_PERIOD</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memitem:ab56d85712c01dbd0ae057003326d2943" id="r_ab56d85712c01dbd0ae057003326d2943"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab56d85712c01dbd0ae057003326d2943">MOTOR_POT_B1A</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a0e8bab7ea873c22eb90aa81116208917">GPIO_18</a></td></tr>
+<tr class="memitem:a85b167958a1a18adc46726a5930c06de" id="r_a85b167958a1a18adc46726a5930c06de"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a85b167958a1a18adc46726a5930c06de">MOTOR_POT_B2A</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393aa2918c94bcf473e7ff31138b6333f847">GPIO_19</a></td></tr>
+<tr class="memitem:a51de5b75e87975a7b23a27d6a16c9ee8" id="r_a51de5b75e87975a7b23a27d6a16c9ee8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a51de5b75e87975a7b23a27d6a16c9ee8">MOTOR_DIR_A1A</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a081be372da926e3ca6f612b267854e95">GPIO_20</a></td></tr>
+<tr class="memitem:ae84222dc9a5f21145d57170cabe4f04b" id="r_ae84222dc9a5f21145d57170cabe4f04b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae84222dc9a5f21145d57170cabe4f04b">MOTOR_DIR_A1B</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a32ff7e9a2f00d396ff2b2b62af571d7c">GPIO_21</a></td></tr>
+<tr class="memitem:ab61d0981ed42df9e18211b273d22cfcd" id="r_ab61d0981ed42df9e18211b273d22cfcd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab61d0981ed42df9e18211b273d22cfcd">BUZZER_PIN</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393aca7c5f2acf755d61b35d05ea921c79eb">GPIO_22</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a75f2e78ec3f3b826bc4116bdf6fff4d6" id="r_a75f2e78ec3f3b826bc4116bdf6fff4d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75f2e78ec3f3b826bc4116bdf6fff4d6">Adelante</a> (void)</td></tr>
+<tr class="memdesc:a75f2e78ec3f3b826bc4116bdf6fff4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desplaza el vehículo hacia adelante.  <br /></td></tr>
+<tr class="memitem:a2eaa10f5d54dd6fe4be2ef1185bbbf89" id="r_a2eaa10f5d54dd6fe4be2ef1185bbbf89"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2eaa10f5d54dd6fe4be2ef1185bbbf89">Atras</a> (void)</td></tr>
+<tr class="memdesc:a2eaa10f5d54dd6fe4be2ef1185bbbf89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desplaza el vehículo hacia atrás.  <br /></td></tr>
+<tr class="memitem:a73a0045fee19287da0824eecb4ffdc45" id="r_a73a0045fee19287da0824eecb4ffdc45"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73a0045fee19287da0824eecb4ffdc45">Derecha</a> (void)</td></tr>
+<tr class="memdesc:a73a0045fee19287da0824eecb4ffdc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gira el vehículo hacia la derecha.  <br /></td></tr>
+<tr class="memitem:a218541939ec1a0d3e72cea9e45c317d2" id="r_a218541939ec1a0d3e72cea9e45c317d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a218541939ec1a0d3e72cea9e45c317d2">Izquierda</a> (void)</td></tr>
+<tr class="memdesc:a218541939ec1a0d3e72cea9e45c317d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gira el vehículo hacia la izquierda.  <br /></td></tr>
+<tr class="memitem:a105e6209b713a91e8563374cf8042603" id="r_a105e6209b713a91e8563374cf8042603"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a105e6209b713a91e8563374cf8042603">Parar_avance</a> (void)</td></tr>
+<tr class="memdesc:a105e6209b713a91e8563374cf8042603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detiene el movimiento de avance o retroceso.  <br /></td></tr>
+<tr class="memitem:a939aa77a4d682fa2f81869273018c728" id="r_a939aa77a4d682fa2f81869273018c728"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a939aa77a4d682fa2f81869273018c728">Parar_giro</a> (void)</td></tr>
+<tr class="memdesc:a939aa77a4d682fa2f81869273018c728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detiene el giro del vehículo.  <br /></td></tr>
+<tr class="memitem:ab56e1ff0f71e003f2e08c6ec294528b1" id="r_ab56e1ff0f71e003f2e08c6ec294528b1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab56e1ff0f71e003f2e08c6ec294528b1">read_data</a> (uint8_t *data, uint8_t length)</td></tr>
+<tr class="memdesc:ab56e1ff0f71e003f2e08c6ec294528b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback ejecutado al recibir datos por BLE.  <br /></td></tr>
+<tr class="memitem:a8ebd0f7d55e43f8ee7a193ad301d669e" id="r_a8ebd0f7d55e43f8ee7a193ad301d669e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8ebd0f7d55e43f8ee7a193ad301d669e">TaskBocina</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a8ebd0f7d55e43f8ee7a193ad301d669e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea encargada de reproducir la melodía del buzzer.  <br /></td></tr>
+<tr class="memitem:a5e5509a6650f49f324bc1d0dd1c20058" id="r_a5e5509a6650f49f324bc1d0dd1c20058"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e5509a6650f49f324bc1d0dd1c20058">TaskMovimiento</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a5e5509a6650f49f324bc1d0dd1c20058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea encargada del movimiento del vehículo.  <br /></td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="memdesc:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punto de entrada de la aplicación.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a90e948342f7ccd5ee2b9bfb658a0ba3d" id="r_a90e948342f7ccd5ee2b9bfb658a0ba3d"><td class="memItemLeft">volatile char&#160;</td><td class="memItemRight"><a class="el" href="#a90e948342f7ccd5ee2b9bfb658a0ba3d">comando</a> = '0'</td></tr>
+<tr class="memdesc:a90e948342f7ccd5ee2b9bfb658a0ba3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Último comando recibido por Bluetooth.  <br /></td></tr>
+<tr class="memitem:a2cb48785cd4cca58de32d667370d117b" id="r_a2cb48785cd4cca58de32d667370d117b"><td class="memItemLeft">volatile bool&#160;</td><td class="memItemRight"><a class="el" href="#a2cb48785cd4cca58de32d667370d117b">tocar_bocina</a> = false</td></tr>
+<tr class="memdesc:a2cb48785cd4cca58de32d667370d117b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica que debe reproducirse la bocina.  <br /></td></tr>
+<tr class="memitem:a3b7d7ec4dd12ff5a66c19c077185ef0d" id="r_a3b7d7ec4dd12ff5a66c19c077185ef0d"><td class="memItemLeft">volatile bool&#160;</td><td class="memItemRight"><a class="el" href="#a3b7d7ec4dd12ff5a66c19c077185ef0d">nuevo_comando</a> = false</td></tr>
+<tr class="memdesc:a3b7d7ec4dd12ff5a66c19c077185ef0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica que existe un nuevo comando pendiente de procesar.  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentación de «define»</h2>
+<a id="ab61d0981ed42df9e18211b273d22cfcd" name="ab61d0981ed42df9e18211b273d22cfcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab61d0981ed42df9e18211b273d22cfcd">&#9670;&#160;</a></span>BUZZER_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUZZER_PIN&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393aca7c5f2acf755d61b35d05ea921c79eb">GPIO_22</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GPIO conectado al buzzer </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00100">100</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a3df1b4cad09974bfc68858fad7cdc054" name="a3df1b4cad09974bfc68858fad7cdc054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df1b4cad09974bfc68858fad7cdc054">&#9670;&#160;</a></span>CONFIG_BLINK_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_BLINK_PERIOD&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tiempo de actualización del LED (ms) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00093">93</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a7a3ccd8a43b5c5e8a4d573780da1fd4a" name="a7a3ccd8a43b5c5e8a4d573780da1fd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3ccd8a43b5c5e8a4d573780da1fd4a">&#9670;&#160;</a></span>LED_BT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_BT&#160;&#160;&#160;<a class="el" href="group___l_e_d.html#ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b">LED_1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LED indicador del estado Bluetooth </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00091">91</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a51de5b75e87975a7b23a27d6a16c9ee8" name="a51de5b75e87975a7b23a27d6a16c9ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51de5b75e87975a7b23a27d6a16c9ee8">&#9670;&#160;</a></span>MOTOR_DIR_A1A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_DIR_A1A&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a081be372da926e3ca6f612b267854e95">GPIO_20</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00097">97</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>, <a class="el" href="proyecto__final_8c_source.html#l00142">Derecha()</a>, <a class="el" href="proyecto__final_8c_source.html#l00152">Izquierda()</a> y <a class="el" href="proyecto__final_8c_source.html#l00170">Parar_giro()</a>.</p>
+
+</div>
+</div>
+<a id="ae84222dc9a5f21145d57170cabe4f04b" name="ae84222dc9a5f21145d57170cabe4f04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84222dc9a5f21145d57170cabe4f04b">&#9670;&#160;</a></span>MOTOR_DIR_A1B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_DIR_A1B&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a32ff7e9a2f00d396ff2b2b62af571d7c">GPIO_21</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00098">98</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>, <a class="el" href="proyecto__final_8c_source.html#l00142">Derecha()</a>, <a class="el" href="proyecto__final_8c_source.html#l00152">Izquierda()</a> y <a class="el" href="proyecto__final_8c_source.html#l00170">Parar_giro()</a>.</p>
+
+</div>
+</div>
+<a id="ab56d85712c01dbd0ae057003326d2943" name="ab56d85712c01dbd0ae057003326d2943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56d85712c01dbd0ae057003326d2943">&#9670;&#160;</a></span>MOTOR_POT_B1A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_POT_B1A&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a0e8bab7ea873c22eb90aa81116208917">GPIO_18</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00095">95</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00124">Adelante()</a>, <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>, <a class="el" href="proyecto__final_8c_source.html#l00134">Atras()</a> y <a class="el" href="proyecto__final_8c_source.html#l00161">Parar_avance()</a>.</p>
+
+</div>
+</div>
+<a id="a85b167958a1a18adc46726a5930c06de" name="a85b167958a1a18adc46726a5930c06de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b167958a1a18adc46726a5930c06de">&#9670;&#160;</a></span>MOTOR_POT_B2A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_POT_B2A&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393aa2918c94bcf473e7ff31138b6333f847">GPIO_19</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00096">96</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00124">Adelante()</a>, <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>, <a class="el" href="proyecto__final_8c_source.html#l00134">Atras()</a> y <a class="el" href="proyecto__final_8c_source.html#l00161">Parar_avance()</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a75f2e78ec3f3b826bc4116bdf6fff4d6" name="a75f2e78ec3f3b826bc4116bdf6fff4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f2e78ec3f3b826bc4116bdf6fff4d6">&#9670;&#160;</a></span>Adelante()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adelante </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desplaza el vehículo hacia adelante. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00124">124</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="proyecto__final_8c_source.html#l00095">MOTOR_POT_B1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00096">MOTOR_POT_B2A</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Punto de entrada de la aplicación. </p>
+<p>Inicializa los periféricos, configura Bluetooth Low Energy, crea las tareas de FreeRTOS y supervisa el estado de conexión mediante un LED indicador. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00277">277</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="ble__hid__mcu_8h_source.html#l00039">BLE_CONNECTED</a>, <a class="el" href="ble__hid__mcu_8h_source.html#l00038">BLE_DISCONNECTED</a>, <a class="el" href="ble__hid__mcu_8h_source.html#l00037">BLE_OFF</a>, <a class="el" href="ble__mcu_8c_source.html#l00452">BleInit()</a>, <a class="el" href="ble__mcu_8c_source.html#l00530">BleStatus()</a>, <a class="el" href="proyecto__final_8c_source.html#l00100">BUZZER_PIN</a>, <a class="el" href="buzzer_8c_source.html#l00043">BuzzerInit()</a>, <a class="el" href="proyecto__final_8c_source.html#l00093">CONFIG_BLINK_PERIOD</a>, <a class="el" href="gpio__mcu_8h_source.html#l00044">GPIO_OUTPUT</a>, <a class="el" href="gpio__mcu_8c_source.html#l00067">GPIOInit()</a>, <a class="el" href="proyecto__final_8c_source.html#l00091">LED_BT</a>, <a class="el" href="led_8c_source.html#l00065">LedOff()</a>, <a class="el" href="led_8c_source.html#l00046">LedOn()</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="led_8c_source.html#l00084">LedToggle()</a>, <a class="el" href="proyecto__final_8c_source.html#l00097">MOTOR_DIR_A1A</a>, <a class="el" href="proyecto__final_8c_source.html#l00098">MOTOR_DIR_A1B</a>, <a class="el" href="proyecto__final_8c_source.html#l00095">MOTOR_POT_B1A</a>, <a class="el" href="proyecto__final_8c_source.html#l00096">MOTOR_POT_B2A</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="proyecto__final_8c_source.html#l00161">Parar_avance()</a>, <a class="el" href="proyecto__final_8c_source.html#l00170">Parar_giro()</a>, <a class="el" href="proyecto__final_8c_source.html#l00185">read_data()</a>, <a class="el" href="proyecto__final_8c_source.html#l00205">TaskBocina()</a> y <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a2eaa10f5d54dd6fe4be2ef1185bbbf89" name="a2eaa10f5d54dd6fe4be2ef1185bbbf89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eaa10f5d54dd6fe4be2ef1185bbbf89">&#9670;&#160;</a></span>Atras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Atras </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desplaza el vehículo hacia atrás. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00134">134</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="proyecto__final_8c_source.html#l00095">MOTOR_POT_B1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00096">MOTOR_POT_B2A</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a73a0045fee19287da0824eecb4ffdc45" name="a73a0045fee19287da0824eecb4ffdc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a0045fee19287da0824eecb4ffdc45">&#9670;&#160;</a></span>Derecha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Derecha </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gira el vehículo hacia la derecha. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00142">142</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="proyecto__final_8c_source.html#l00097">MOTOR_DIR_A1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00098">MOTOR_DIR_A1B</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a218541939ec1a0d3e72cea9e45c317d2" name="a218541939ec1a0d3e72cea9e45c317d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218541939ec1a0d3e72cea9e45c317d2">&#9670;&#160;</a></span>Izquierda()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Izquierda </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gira el vehículo hacia la izquierda. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00152">152</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="proyecto__final_8c_source.html#l00097">MOTOR_DIR_A1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00098">MOTOR_DIR_A1B</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a105e6209b713a91e8563374cf8042603" name="a105e6209b713a91e8563374cf8042603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105e6209b713a91e8563374cf8042603">&#9670;&#160;</a></span>Parar_avance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parar_avance </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detiene el movimiento de avance o retroceso. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00161">161</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="proyecto__final_8c_source.html#l00095">MOTOR_POT_B1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00096">MOTOR_POT_B2A</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a> y <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a939aa77a4d682fa2f81869273018c728" name="a939aa77a4d682fa2f81869273018c728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939aa77a4d682fa2f81869273018c728">&#9670;&#160;</a></span>Parar_giro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parar_giro </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detiene el giro del vehículo. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00170">170</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="proyecto__final_8c_source.html#l00097">MOTOR_DIR_A1A</a> y <a class="el" href="proyecto__final_8c_source.html#l00098">MOTOR_DIR_A1B</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a> y <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="ab56e1ff0f71e003f2e08c6ec294528b1" name="ab56e1ff0f71e003f2e08c6ec294528b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56e1ff0f71e003f2e08c6ec294528b1">&#9670;&#160;</a></span>read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback ejecutado al recibir datos por BLE. </p>
+<p>El primer byte recibido corresponde al comando enviado desde la aplicación móvil.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Vector que contiene los datos recibidos. </td></tr>
+    <tr><td class="paramname">length</td><td>Cantidad de bytes recibidos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00185">185</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="proyecto__final_8c_source.html#l00107">comando</a>, <a class="el" href="proyecto__final_8c_source.html#l00117">nuevo_comando</a> y <a class="el" href="proyecto__final_8c_source.html#l00112">tocar_bocina</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a8ebd0f7d55e43f8ee7a193ad301d669e" name="a8ebd0f7d55e43f8ee7a193ad301d669e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebd0f7d55e43f8ee7a193ad301d669e">&#9670;&#160;</a></span>TaskBocina()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskBocina </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea encargada de reproducir la melodía del buzzer. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parámetro de FreeRTOS (no utilizado). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00205">205</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="buzzer_8c_source.html#l00068">BuzzerPlayRtttl()</a>, <a class="el" href="buzzer__melodies_8h_source.html#l00050">songLaCucaracha</a> y <a class="el" href="proyecto__final_8c_source.html#l00112">tocar_bocina</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a5e5509a6650f49f324bc1d0dd1c20058" name="a5e5509a6650f49f324bc1d0dd1c20058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5509a6650f49f324bc1d0dd1c20058">&#9670;&#160;</a></span>TaskMovimiento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskMovimiento </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea encargada del movimiento del vehículo. </p>
+<p>Procesa los comandos recibidos mediante Bluetooth y ejecuta la acción correspondiente sobre los motores.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>Parámetro de FreeRTOS (no utilizado). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00229">229</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="proyecto__final_8c_source.html#l00124">Adelante()</a>, <a class="el" href="proyecto__final_8c_source.html#l00134">Atras()</a>, <a class="el" href="proyecto__final_8c_source.html#l00107">comando</a>, <a class="el" href="proyecto__final_8c_source.html#l00142">Derecha()</a>, <a class="el" href="proyecto__final_8c_source.html#l00152">Izquierda()</a>, <a class="el" href="proyecto__final_8c_source.html#l00117">nuevo_comando</a>, <a class="el" href="proyecto__final_8c_source.html#l00161">Parar_avance()</a> y <a class="el" href="proyecto__final_8c_source.html#l00170">Parar_giro()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00277">app_main()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="a90e948342f7ccd5ee2b9bfb658a0ba3d" name="a90e948342f7ccd5ee2b9bfb658a0ba3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e948342f7ccd5ee2b9bfb658a0ba3d">&#9670;&#160;</a></span>comando</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile char comando = '0'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Último comando recibido por Bluetooth. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00107">107</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00185">read_data()</a> y <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a3b7d7ec4dd12ff5a66c19c077185ef0d" name="a3b7d7ec4dd12ff5a66c19c077185ef0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7d7ec4dd12ff5a66c19c077185ef0d">&#9670;&#160;</a></span>nuevo_comando</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool nuevo_comando = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica que existe un nuevo comando pendiente de procesar. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00117">117</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00185">read_data()</a> y <a class="el" href="proyecto__final_8c_source.html#l00229">TaskMovimiento()</a>.</p>
+
+</div>
+</div>
+<a id="a2cb48785cd4cca58de32d667370d117b" name="a2cb48785cd4cca58de32d667370d117b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb48785cd4cca58de32d667370d117b">&#9670;&#160;</a></span>tocar_bocina</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool tocar_bocina = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica que debe reproducirse la bocina. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="proyecto__final_8c_source.html#l00112">112</a> del archivo <a class="el" href="proyecto__final_8c_source.html">proyecto_final.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="proyecto__final_8c_source.html#l00185">read_data()</a> y <a class="el" href="proyecto__final_8c_source.html#l00205">TaskBocina()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a href="dir_a98f65194be6250ed30ff85b73295a0e.html">proyecto_final</a></li><li class="navelem"><a href="dir_bb93225c6fabae94b70f47f4f7a3c4e8.html">main</a></li><li class="navelem"><a href="proyecto__final_8c.html">proyecto_final.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
